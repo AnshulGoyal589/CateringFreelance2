@@ -121,7 +121,7 @@ const Course=(props)=>{
     return(
         <div className="menu-main"
         data-aos="fade-up">
-        <h1 style={{backgroundColor:`${props.color}`}}>{props.name}</h1>
+        <h1 >{props.name}</h1>
         <div className="starters" ref={scrollRef}>
             {menuData.map((element)=>{
                 return (
