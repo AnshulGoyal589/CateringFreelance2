@@ -3,7 +3,7 @@ import {useState} from "react"
 import MenuIcon from "../../../assets/header/MenuIcon.png"
 import CollapseArrow from "../../../assets/header/CollapseArrow.png"
 const Navbar=()=>{
-    const [sideBar,setSideBar]=useState(true);
+    const [sideBar,setSideBar]=useState(false);
     return(
         <div className="navbar">
             <div className="title">
