@@ -1,4 +1,5 @@
-import { useEffect } from "react";
+import { useEffect} from "react";
+import {useNavigate} from "react-router-dom"
 import AOS from "aos";
 import "aos/dist/aos.css"; 
 
@@ -18,7 +19,7 @@ const EventHome = (props) => {
             duration: 500, 
         });
     }, []);
-
+    const navigate = useNavigate();
     return (
         <div className="event-container">
             <div className="event-list">
@@ -38,7 +39,7 @@ const EventHome = (props) => {
                                 quaerat voluptatem. Ut enim ad minima veniam, quis
                             </p>
                         </div>
-                        <button>View More</button>
+                        <button onClick={()=>(navigate("/corporate-event"))}>View More</button>
                     </div>
                 </div>
 
@@ -53,7 +54,7 @@ const EventHome = (props) => {
                             qui dolorem ipsum quia dolor sit amet, consectetur,
                             adipisci velit, sed quia non numquam
                         </p>
-                        <button>View More</button>
+                        <button onClick={()=>(navigate("/corporate-event"))}>View More</button>
                     </div>
                 </div>
 
@@ -69,7 +70,7 @@ const EventHome = (props) => {
                             qui dolorem ipsum liquam quaerat voluptatem. Ut enim
                             ad minima veniam, quis
                         </p>
-                        <button>View More</button>
+                        <button onClick={()=>(navigate("/corporate-event"))}>View More</button>
                     </div>
                 </div>
 
@@ -85,7 +86,7 @@ const EventHome = (props) => {
                             modi temp dolorem ipsum quia dolor sit amet, dolorem
                             ipsum quia dolor sit amet,
                         </p>
-                        <button>View More</button>
+                        <button onClick={()=>(navigate("/corporate-event"))}>View More</button>
                     </div>
                 </div>
 
@@ -95,7 +96,7 @@ const EventHome = (props) => {
                     </div>
                     <div className="title">
                         <h2>Birthdays</h2>
-                        <button>View More</button>
+                        <button onClick={()=>(navigate("/corporate-event"))}>View More</button>
                     </div>
                     <div className="color-line"></div>
                     <div className="description">
