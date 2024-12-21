@@ -33,19 +33,19 @@ const Navbar=()=>{
             <>
             <div className="sidebar"> 
                 <div>
-                    <text>Home</text>
+                    <text><a href="/">Home</a></text>
                 </div>
                 <div>
-                    <text>Events</text>
+                    <text><a href="/events">Events</a></text>
                 </div>
                 <div>
-                    <text>Contact Us</text>
+                    <text><a href="/contact-us">Contact Us</a></text>
                 </div>
                 <div>
-                    <text>About Us</text>
+                    <text><a href="/about-us">About Us</a></text>
                 </div>
                 <div>
-                    <text>Blog</text>
+                    <text><a href="/">Blog</a></text>
                 </div>
             </div>
             <div class="collapse-sidebar" onClick={()=>{setSideBar(false)}} style={{fontFamily:"sans-serif"}}>
