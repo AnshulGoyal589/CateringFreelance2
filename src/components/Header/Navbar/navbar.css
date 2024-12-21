@@ -1,5 +1,8 @@
+body{
+    overflow-x: hidden;
+}
 .navbar{
-    width:102%;
+    width:101%;
     height:90px;
     /* height:12vh; */
     display:flex;
