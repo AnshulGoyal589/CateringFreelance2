@@ -54,7 +54,7 @@ const EventHome = (props) => {
                             qui dolorem ipsum quia dolor sit amet, consectetur,
                             adipisci velit, sed quia non numquam
                         </p>
-                        <button onClick={()=>(navigate("/corporate-event"))}>View More</button>
+                        <button onClick={()=>(navigate("/social-event"))}>View More</button>
                     </div>
                 </div>
 
@@ -70,7 +70,7 @@ const EventHome = (props) => {
                             qui dolorem ipsum liquam quaerat voluptatem. Ut enim
                             ad minima veniam, quis
                         </p>
-                        <button onClick={()=>(navigate("/corporate-event"))}>View More</button>
+                        <button onClick={()=>(navigate("/international-event"))}>View More</button>
                     </div>
                 </div>
 
@@ -86,7 +86,7 @@ const EventHome = (props) => {
                             modi temp dolorem ipsum quia dolor sit amet, dolorem
                             ipsum quia dolor sit amet,
                         </p>
-                        <button onClick={()=>(navigate("/corporate-event"))}>View More</button>
+                        <button onClick={()=>(navigate("/social-event"))}>View More</button>
                     </div>
                 </div>
 

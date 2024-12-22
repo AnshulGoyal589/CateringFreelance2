@@ -7,8 +7,9 @@ import "./eventmenu.css";
 
 const EventMenu = (props) => {
     const scrollRef=useRef(null);
+    console.log(props.eventType)
     useEffect(() => {
-        props.setPreview("Corporate Events");
+        props.setPreview(props.eventType);
         AOS.init({
             duration: 500, 
         });
