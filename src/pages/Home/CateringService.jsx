@@ -4,7 +4,7 @@ import b2 from '../../assets/b2.jpg';
 
 const CateringService = () => {
   return (
-    <div className='mt-4 relative mb-16 lg:mb-40'>
+    <div className='mt-4 relative mb-16 lg:mb-7'>
       <div>
         <div
           style={{
@@ -28,7 +28,7 @@ const CateringService = () => {
         </div>
       </div>
 
-      <div className="relative z-[100] top-[75%] sm:top-[75%] md:top-[75%] px-10 min-w-full bg-transparent">
+      <div className=" z-[100] top-[75%] sm:top-[75%] md:top-[75%] min-w-full bg-transparent">
         <MenuData />
       </div>
     </div>

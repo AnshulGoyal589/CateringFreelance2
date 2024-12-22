@@ -42,12 +42,12 @@ const Service = () => {
   useEffect(() => {
     AOS.init({
       duration: 400,
-      once: false,
+      once: true,
     });
   }, []);
 
   return (
-    <div className="flex flex-col mt-4 py-20 bg-white">
+    <div className="flex flex-col pb-10 bg-white">
       <div className="text-center mb-8 px-4">
         <h1 className="text-black text-[40px]">Catering Services</h1>
         <p className="text-black text-xl">
@@ -55,18 +55,20 @@ const Service = () => {
         </p>
       </div>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 px-4">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 px-4 overflow-hidden lg:min-h-fit">
         {servicesInfo.map((service, index) => (
           <div
             key={index}
-            className="flex gap-5 p-4 bg-gray-100 rounded-lg shadow-md"
+            className="flex gap-5 p-4 bg-gray-100 rounded-lg shadow-md max-h-[300px] overflow-hidden"
             data-aos="fade-up"
-            data-aos-delay={index*40} 
+            data-aos-delay={index * 40}
           >
-            <div className="icon text-4xl mb-4">{service.icon}</div>
-            <div>
+            <div className="icon flex justify-center items-center text-4xl sm:text-3xl md:text-4xl mb-4 w-14 h-14 sm:w-16 sm:h-16 md:w-20 md:h-20">
+              {service.icon}
+            </div>
+            <div className="flex flex-col justify-between h-full">
               <h3 className="text-lg font-semibold">{service.title}</h3>
-              <p className="text-richblack-300">{service.description}</p>
+              <p className="text-richblack-300 text-sm">{service.description}</p>
             </div>
           </div>
         ))}

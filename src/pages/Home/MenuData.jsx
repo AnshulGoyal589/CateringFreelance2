@@ -271,24 +271,25 @@ const MenuComponent = () => {
   const handleCategoryClick = (category) => {
     setSelectedCategory(category);
   };
+
   return (
-    <div className="menu-container pt-3 pb-7 px-6 bg-white">
-      <div className="category-grid grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 md:min-h-[5rem] gap-4 mb-6">
+    <div className="overflow-x-clip pt-3 px-4 bg-white">
+      <div className="category-grid grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 md:min-h-[5rem] gap-4 mb-6 overflow-hidden">
         {categories.map((category, index) => (
           <button
             key={index}
             onClick={() => handleCategoryClick(category)}
-            className={`py-2 px-4 text-sm sm:text-lg md:text-xl rounded-md transition duration-300 ease-in-out focus:outline-none ${
+            className={`py-2 text-sm sm:text-lg md:text-xl rounded-md transition duration-300 ease-in-out focus:outline-none ${
               selectedCategory === category
-                ? 'bg-[#f1a986] text-white transform scale-105'
-                : 'bg-gray-200 text-black hover:bg-gray-300'
+                ? "bg-[#f1a986] text-white transform scale-105"
+                : "bg-gray-200 text-black hover:bg-gray-300"
             }`}
           >
             {category}
           </button>
         ))}
       </div>
-  
+
       <div className="data-display mt-6">
         <div className="data-container px-4 sm:px-8 md:px-11">
           <div className="menu-items grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-6">
@@ -302,7 +303,9 @@ const MenuComponent = () => {
                   <p className="text-gray-600 text-sm sm:text-base">{item.dishInfo}</p>
                   <p className="text-lg font-bold mt-2">{item.price}</p>
                 </div>
-                <div className="ml-auto mt-4 sm:mt-0">
+                <div
+                  className="ml-auto mt-4 sm:mt-0 sm:flex-none sm:w-auto flex-col flex justify-between mx-auto items-center"
+                >
                   <img
                     src={item.image}
                     alt={item.dishName}
@@ -316,9 +319,8 @@ const MenuComponent = () => {
       </div>
     </div>
   );
-  
-  
-  
 };
 
 export default MenuComponent;
+
+

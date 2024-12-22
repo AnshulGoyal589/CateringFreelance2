@@ -1,12 +1,10 @@
 import React from "react";
 import "aos/dist/aos.css"; 
-import e1 from "../../assets/e1.jpg"
-import e2 from "../../assets/e2.jpg"
-import e3 from "../../assets/e3.jpg"
-import e4 from "../../assets/e4.jpg"
-import e5 from "../../assets/e5.jpg"
-
-
+import e1 from "../../assets/e1.jpg";
+import e2 from "../../assets/e2.jpg";
+import e3 from "../../assets/e3.jpg";
+import e4 from "../../assets/e4.jpg";
+import e5 from "../../assets/e5.jpg";
 
 const CateringEvents = () => {
   const data = [
@@ -18,7 +16,7 @@ const CateringEvents = () => {
   ];
 
   return (
-    <div className="py-10 bg-white">
+    <div className="py-10 bg-white overflow-x-hidden">
       <div className="text-center mb-10">
         <h1 className="text-4xl font-semibold text-gray-800 mb-4">
           Catering Events
@@ -30,7 +28,7 @@ const CateringEvents = () => {
         </p>
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-5 px-6 gap-4">
+      <div className="grid grid-cols-1 md:grid-cols-5 gap-4 px-6">
         {data.map((item, index) => (
           <div key={index} className="relative group">
             <div className="overflow-hidden rounded-lg">
