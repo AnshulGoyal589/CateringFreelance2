@@ -35,8 +35,8 @@ const EventHome = (props) => {
                             <p>
                                 qui dolorem ipsum quia dolor sit amet, consectetur,
                                 adipisci velit, sed quia non numquam eius modi
-                                tempora incidunt ut labore et dolore magnam aliquam
-                                quaerat voluptatem. Ut enim ad minima veniam, quis
+                                tempora <span>incidunt ut labore et dolore magnam aliquam
+                                quaerat voluptatem. Ut enim ad minima veniam, quis</span>
                             </p>
                         </div>
                         <button onClick={()=>(navigate("/corporate-event"))}>View More</button>
