@@ -15,7 +15,7 @@
     animation:enter 1s forwards 0.3s;
     position:relative;
     right:500px;
-    width:min-content;
+    width:90%;
 }
 .preview text{
     color:white;

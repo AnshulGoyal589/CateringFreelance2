@@ -143,6 +143,10 @@
     box-shadow:0px 0px 10px rgb(222, 222, 222);
     color:grey;
     text-align:center;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    flex-direction:column;
 }
 .event-list .corporate-event button{
     border:0.5px solid #f09c6e;
@@ -383,7 +387,7 @@
         display:block;
     }
 }
-@media (max-width:700px){
+/* @media (max-width:700px){
     .event-list {
     }
     .corporate-event .description{
@@ -462,5 +466,52 @@
     .event-container{
         min-width:min-content;
         margin-left:0;
+    }
+} */
+@media (max-width:600px){
+    *{
+        font-size: small;
+    }
+    .event-list{
+        display:flex;
+        flex-direction:column;
+        height:1700px
+    }
+    .event-list> div{
+        max-height:200px;
+    }
+    .social-event{
+        width:100%;
+        max-width:100vw;
+        background-size:100%;
+    }
+    .social-event .auxiliary button{
+        margin-top:20%;
+    }
+    .corporate-event .auxiliary button{
+        margin-left:25%;
+        width:50%;
+        margin-top:7.5%;
+    }
+    .social-event .circle{
+        margin-top:-3%;
+        width:30vw;
+    }
+}
+@media (max-width:400px){
+    span {
+        display:none;
+    }
+    .event-list >div{
+        max-height:10px;
+    }
+    .birthday .description{
+        font-size: smaller;
+    }
+    .engagement .simple button{
+        width:35%;
+    }
+    .social-event .circle h1{
+        font-size:larger;
     }
 }
