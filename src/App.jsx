@@ -11,7 +11,7 @@ import EventMenu from "./pages/EventMenu"
 const App=()=>{
     const [pageData,setPageData]=useState("");
     return (
-        <div className="max-w-screen overflow-x-hidden min-h-screen bg-richblack-900 flex flex-col font-inter">
+        <div className="max-w-screen overflow-x-hidden min-h-screen flex flex-col font-inter">
         <Header className="w-full" page={pageData}/>
         <Router>
             <Routes>
