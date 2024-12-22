@@ -63,7 +63,7 @@ const News = () => {
   return (
     <div className="bg-[#f5f4f0] mt-5 py-6 px-4 sm:px-8 lg:px-12">
       <div className="flex flex-col items-center text-center mb-8">
-        <h1 className="text-2xl md:text-3xl font-semibold text-richblack-800 mb-2">
+        <h1 className="text-2xl overflow-clip md:text-3xl font-semibold text-richblack-800 mb-2">
           Latest News
         </h1>
         <p className="text-base md:text-lg text-richblack-200 leading-relaxed max-w-2xl">

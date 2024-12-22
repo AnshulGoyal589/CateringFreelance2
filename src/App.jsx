@@ -4,13 +4,14 @@ import EventHome from "./pages/Events/index.jsx"
 import Header from "./components/header/index.jsx"
 import Footer from "./components/footer"
 import {useState} from "react"
+import './index.css'
 import AboutUs from "./pages/AboutUs"
 import ContactUs from './pages/ContactUs'
 import EventMenu from "./pages/EventMenu"
 const App=()=>{
     const [pageData,setPageData]=useState("");
     return (
-        <>
+        <div className="max-w-screen overflow-x-hidden min-h-screen flex flex-col font-inter">
         <Header className="w-full" page={pageData}/>
         <Router>
             <Routes>
@@ -22,7 +23,7 @@ const App=()=>{
             </Routes>
         </Router>
         <Footer/>
-        </>
+        </div>
     )
 }
 export default App;

@@ -3,6 +3,7 @@ import { FaEnvelope, FaMapMarkerAlt, FaPhone } from 'react-icons/fa';
 import { useForm } from 'react-hook-form';
 import emailjs from 'emailjs-com'; 
 import { toast } from 'react-hot-toast'; 
+import '../../index.css'
 
 const Index = () => {
   const [formData, setFormData] = useState({
@@ -49,7 +50,8 @@ const Index = () => {
   };
 
   return (
-    <div className="max-w-6xl mx-auto p-6 grid grid-cols-1 md:grid-cols-2 gap-8">
+    
+    <div className="max-w-[100vw] mx-auto p-6 grid grid-cols-1 md:grid-cols-2 gap-8">
       <div className="space-y-6">
         <div>
           <h2 className="text-2xl font-semibold text-gray-800 mb-4">How to find us</h2>

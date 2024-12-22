@@ -33,7 +33,7 @@ const Scard = () => {
   ];
 
   return (
-    <div className="flex flex-wrap justify-center gap-8 py-6 px-6">
+    <div className="flex flex-wrap justify-center gap-8 py-6 px-6 overflow-hidden">
       {divData.map((item, index) => (
         <div
           key={index}

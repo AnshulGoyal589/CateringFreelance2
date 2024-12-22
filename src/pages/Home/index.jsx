@@ -164,18 +164,13 @@ const Home = (props) => {
         <CateringService />
       </div>
 
-      <div className="mt-10">
+      <div className="">
         <Service />
       </div>
 
       <div>
         <PriceOptions />
       </div>
-
-      <div>
-        {/* <AboutUs /> */}
-      </div>
-
       <div className="mt-9 bg-gray-100 py-10">
         <Testimonial />
       </div>
@@ -188,9 +183,6 @@ const Home = (props) => {
         <News />
       </div>
 
-      <div className="px-10 bg-white">
-        <FindUs />
-      </div>
     </div>
   );
 };
