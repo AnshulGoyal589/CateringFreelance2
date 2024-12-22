@@ -2,7 +2,7 @@ import AOS from 'aos';
 import 'aos/dist/aos.css'; 
 import React, { useEffect } from 'react';
 import { useInView } from 'react-intersection-observer';
-import b2 from "../../assets/b2.jpg";
+import b2 from "../../assets/b2.avif";
 import img1 from '../../assets/img1.jpg';
 import CountUp from 'react-countup';
 

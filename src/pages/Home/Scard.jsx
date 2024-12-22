@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
-import b1 from "../../assets/b1.jpg";
-import b2 from "../../assets/b2.jpg";
-import b3 from "../../assets/b3.jpg";
+import b1 from "../../assets/b1.avif";
+import b2 from "../../assets/b2.avif";
+import b3 from "../../assets/b3.avif";
 // import '../../index.css';
 import AOS from 'aos';
 import 'aos/dist/aos.css'; 

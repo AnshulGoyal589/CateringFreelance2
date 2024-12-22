@@ -86,7 +86,7 @@ const CardComponent = () => {
         ))}
       </Swiper>
 
-      <div className="flex pb-10 justify-center gap-4 lg:mt-8 mt-6 bg-transparent">
+      <div className="flex pb-10 justify-center gap-4 lg:mt-8 mt-2 bg-transparent">
         <button
           onClick={() => swiperRef.current?.slidePrev()}
           className="bg-[#f1a986] text-white px-6 py-3 rounded-full hover:bg-[#e08b66] transition-all duration-200"
