@@ -1,6 +1,6 @@
 import React from 'react';
 import MenuData from './MenuData';
-import b2 from '../../assets/b2.jpg';
+import b2 from '../../assets/b2.avif';
 
 const CateringService = () => {
   return (

@@ -4,9 +4,9 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import { Navigation, Pagination } from "swiper/modules";
-import b1 from "../../assets/b1.jpg";
-import b2 from "../../assets/b2.jpg";
-import b3 from "../../assets/b3.jpg";
+import b1 from "../../assets/b1.avif";
+import b2 from "../../assets/b2.avif";
+import b3 from "../../assets/b3.avif";
 import PriceOptions from "./PriceOptions";
 import CompSlide from "./CompSlide";
 import CardComponent from "./CardComponent";
@@ -120,7 +120,7 @@ const Home = (props) => {
         }}
       >
         {/* Backdrop Filter */}
-        <div className="absolute inset-0 bg-black bg-opacity-40"></div>
+        <div className="absolute inset-0  bg-black bg-opacity-20"></div>
 
         {/* Header Text */}
         {/* <div className="absolute top-0 left-0 right-0 bg-opacity-30 py-4 hover:bg-white transition-all duration-200">
@@ -156,7 +156,7 @@ const Home = (props) => {
       <div className="swiper-button-prev text-[#f1a986] hover:text-[#f1a986]"></div>
 
       {/* Other Components */}
-      <div className="px-10 -mt-28 h-full bg-transparent">
+      <div className="px-10 -mt-28 bg-transparent">
         <CardComponent />
       </div>
 
