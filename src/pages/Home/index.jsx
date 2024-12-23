@@ -19,7 +19,6 @@ import News from "./News";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { useInView } from "react-intersection-observer";
-import '../../assets/image'
 
 const slideAnimations = `
   @keyframes slideDown {
