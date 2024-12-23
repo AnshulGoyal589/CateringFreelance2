@@ -17,7 +17,7 @@ const App=()=>{
             <Routes>
                 <Route path="/" element={<Home setPreview={setPageData}/>} />
                 <Route path="/events" element={<EventHome setPreview={setPageData}/>}/>
-                <Route path="/about-us" element={<AboutUs setPreview={AboutUs}/>}/>
+                <Route path="/about-us" element={<AboutUs setPreview={setPageData}/>}/>
                 <Route path="/contact-us" element={<ContactUs setPreview={setPageData}/>}/>
                 <Route path="/corporate-event" element={<EventMenu setPreview={setPageData}/>}/>
             </Routes>
