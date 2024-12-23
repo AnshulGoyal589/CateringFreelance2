@@ -14,25 +14,25 @@ import b2 from '../../assets/n6.jpg';
 const News = () => {
   const data = [
     {
-      image: img1,
+      image: "https://res.cloudinary.com/daa3y840x/image/upload/v1734955040/3ec390db-ec7f-4ded-ab46-47be424715b8_bz9uak.jpg",
       heading: 'LAND LIGHTS LET BE DIVIDED',
       date: '2004-05-06',
       text: 'The landscape divides into segments of bright land, a symbol of how even in divided times, light finds its way in the dark.',
     },
     {
-      image: img2,
+      image: "https://res.cloudinary.com/daa3y840x/image/upload/a_-90/v1734955228/2a5defad-016a-4ed0-adde-666cf5a09751_fyql2l.jpg",
       heading: 'SEASONS OVER BEARING AIR',
       date: '2004-01-17',
       text: 'The air seems to change with the seasons, a constant reminder of the forces that shape our world beyond our control.',
     },
     {
-      image: img3,
+      image: "https://res.cloudinary.com/daa3y840x/image/upload/v1734955032/fe792f76-ba07-4f55-a2c3-09b071045c4b_o6sb3k.jpg",
       heading: 'SIGNS LIKENESS FOR MAY',
       date: '2004-05-28',
       text: 'In the month of May, signs appear more clearly as the warmth of spring helps things grow and evolve, just as new beginnings often do.',
     },
     {
-      image: img4,
+      image: "https://res.cloudinary.com/daa3y840x/image/upload/v1734955165/93bb8b09-bc18-488a-9e65-07bc18d1e71d_lt33dr.jpg",
       heading: 'GREATER OPEN AFTER GRASS',
       date: '2004-09-17',
       text: 'As the grass sways, a greater openness emerges, inviting us to explore and discover the richness hidden within the natural world.',
@@ -44,7 +44,7 @@ const News = () => {
       text: 'After division, something remarkable happens: the pieces are gathered back together, each one taking its rightful place.',
     },
     {
-      image: b2,
+      image:"https://res.cloudinary.com/daa3y840x/image/upload/v1734955004/c001ae3e-e551-4bb8-b620-397eceb5a906_rw0szv.jpg",
       heading: 'CREATED LIGHTS WHOSE DAYS',
       date: '2024-03-14',
       text: 'From the creation of lights, the days unfold with possibilities, each one more vibrant and full of purpose than the last.',

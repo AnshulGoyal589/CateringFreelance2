@@ -8,11 +8,11 @@ import e5 from "../../assets/e5.jpg";
 
 const CateringEvents = () => {
   const data = [
-    { image: e1, text: "Special Event Catering" },
-    { image: e2, text: "Catering Holiday Buffet" },
-    { image: e3, text: "Private Dinner Party" },
-    { image: e4, text: "Summer Garden Catering" },
-    { image: e5, text: "Picnic and Party Buffet" },
+    { image: "https://res.cloudinary.com/daa3y840x/image/upload/a_-90/v1734955230/991e61cd-3a03-48ab-b80d-214a61fe13c6_ffcbfv.jpg", text: "Special Event Catering" },
+    { image: "https://res.cloudinary.com/daa3y840x/image/upload/a_-90/v1734955199/3b43b671-3837-4ab5-ae93-b4b4f3a8b27a_xis2va.jpg", text: "Catering Holiday Buffet" },
+    { image: "https://res.cloudinary.com/daa3y840x/image/upload/v1734955080/cd599d6a-3395-4c15-b56c-bf7677f64777_lriocn.jpg", text: "Private Dinner Party" },
+    { image: "https://res.cloudinary.com/daa3y840x/image/upload/v1734955160/6c004137-1db9-411a-95cb-601c02f028f5_y82pt7.jpg", text: "Summer Garden Catering" },
+    { image: "https://res.cloudinary.com/daa3y840x/image/upload/v1734955049/629005d8-0375-496c-833c-7c2cc9837d76_tg3gje.jpg", text: "Picnic and Party Buffet" },
   ];
 
   return (

@@ -30,7 +30,7 @@ const PriceOptions = () => {
           <h1 className="text-black text-2xl">Expert Buffets</h1>
           <div className="rounded-full h-20 w-20 text-[#f1a986]">
             <img
-              src={i1}
+              src={"https://res.cloudinary.com/daa3y840x/image/upload/w_1000,c_fill,ar_1:1,g_auto,r_max,bo_5px_solid_red,b_rgb:262c35/v1734955055/47649fb7-d0f4-4e9a-a173-5e445a688174_vawpwt.jpg"}
               alt="image-icon"
               className="h-full w-full mt-3 font-semibold object-cover rounded-full"
             />
@@ -66,7 +66,7 @@ const PriceOptions = () => {
           <h1 className="text-2xl text-black">Ultimate Buffets</h1>
           <div className="rounded-full h-20 w-20 text-[#f1a986]">
             <img
-              src={i2}
+              src={"https://res.cloudinary.com/daa3y840x/image/upload/w_1000,c_fill,ar_1:1,g_auto,r_max,bo_5px_solid_red,b_rgb:262c35/v1734955052/8e584dc3-55d3-41ba-a940-873f194db2a8_vq70ng.jpg"}
               alt="image-icon"
               className="h-full mt-3 w-full font-semibold object-cover rounded-full"
             />
@@ -102,7 +102,7 @@ const PriceOptions = () => {
           <h1 className="text-2xl text-black">Specialty Buffets</h1>
           <div className="rounded-full h-20 w-20 text-[#f1a986]">
             <img
-              src={i3}
+              src={"https://res.cloudinary.com/daa3y840x/image/upload/w_1000,c_fill,ar_1:1,g_auto,r_max,bo_5px_solid_red,b_rgb:262c35/v1734955096/8f19e195-0b78-4dd8-a491-f53feb4a814a_ptcfkk.jpg"}
               alt="image-icon"
               className="h-full mt-3 w-full font-semibold object-cover rounded-full"
             />

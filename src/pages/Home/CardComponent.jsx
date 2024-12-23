@@ -15,28 +15,30 @@ const CardComponent = () => {
 
   const slidesData = [
     {
-      image: s1,
+      image: "https://res.cloudinary.com/daa3y840x/image/upload/v1734955084/bdda474e-5221-432b-9f8a-076db1e9a26b_ppxtgy.jpg",
       heading: 'Savory Sides',
       subheading:
         'Explore the world of flavors with our curated collection of delicious sides to complement any meal. Dive into a savory adventure!'
-    },
-    {
-      image: s2,
-      heading: 'Tempting Desserts',
-      subheading:
-        'Indulge in the sweetness of life with our tempting desserts that promise to satisfy your cravings and leave you wanting more.'
-    },
-    {
-      image: s3,
-      heading: 'Flavorful Vegetables',
-      subheading:
-        'Discover vibrant, fresh, and flavorful vegetables that transform any dish into a masterpiece of taste and nutritional value.'
     },
     {
       image: s4,
       heading: 'Beverages & More',
       subheading:
         'Quench your thirst and elevate your moments with our refreshing beverages and more, crafted to delight every palate.'
+    }
+    ,
+    {
+      image: "https://res.cloudinary.com/daa3y840x/image/upload/v1734955239/85213c7a-1620-4d35-bbe5-8f41e43b681e_demf7u.jpg",
+      heading: 'Hygiene First ',
+      subheading:
+        'Discover vibrant, fresh, and flavorful vegetables that transform any dish into a masterpiece of taste and nutritional value.'
+    },
+    
+    {
+      image: "https://res.cloudinary.com/daa3y840x/image/upload/c_fill,w_1280,h_960/v1734955169/27f24880-cc5a-46ab-9b40-5d8fe12146b2_oho24q.jpg",
+      heading: 'Tempting Desserts',
+      subheading:
+        'Indulge in the sweetness of life with our tempting desserts that promise to satisfy your cravings and leave you wanting more.'
     }
   ];
 

@@ -122,7 +122,7 @@ const MeetOurTeam = () => {
             {/* Left Content */}
             <div className="w-full lg:w-1/2 space-y-6" data-aos="fade-up">
               <h2 className="text-3xl font-semibold text-gray-800">
-                Other stats about us
+                What people like most about us
               </h2>
               <p className="text-gray-600 text-xl">
               We take pride in our dedication to quality, creativity, and exceptional service, ensuring your catering needs are met with excellence.
@@ -134,6 +134,7 @@ const MeetOurTeam = () => {
 
             {/* Right Content */}
             <div className="w-full lg:w-1/2 space-y-8">
+              
               {stats.map((stat, index) => (
                 <div 
                   key={index} 

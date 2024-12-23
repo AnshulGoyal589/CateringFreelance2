@@ -8,19 +8,18 @@ import b1 from "../../assets/b1.avif";
 import b2 from "../../assets/b2.avif";
 import b3 from "../../assets/b3.avif";
 import PriceOptions from "./PriceOptions";
-import CompSlide from "./CompSlide";
 import CardComponent from "./CardComponent";
 import "../../index.css";
 import CateringService from "./CateringService";
 import Service from "./Service";
-import AboutUs from "./AboutUs";
+import CompSlide from './CompSlide'
 import Testimonial from "./Testimonial";
 import CateringEvents from "./CateringEvents";
 import News from "./News";
-import FindUs from "./FindUs";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { useInView } from "react-intersection-observer";
+import '../../assets/image'
 
 const slideAnimations = `
   @keyframes slideDown {
@@ -46,12 +45,12 @@ const slideAnimations = `
   }
 
   .animate-heading {
-    animation: slideDown 2s ease-out forwards;
+    animation: slideDown 1.25s ease-out forwards;
     opacity: 0;
   }
 
   .animate-buttons {
-    animation: slideUp 2s ease-out forwards;
+    animation: slideUp 1.25s ease-out forwards;
     animation-delay: 0.3s;
     opacity: 0;
   }
@@ -64,17 +63,17 @@ const Home = (props) => {
 },[])
   const slidesData = [
     {
-      image: b1,
+      image: "https://res.cloudinary.com/daa3y840x/image/upload/a_-90/v1734955202/93fbd8aa-5e06-4d71-9f03-ac6e163ff1a1_zmzkfx.jpg",
       heading: "Premium catering services for your taste only",
       subheading: "Discover amazing content here.",
     },
     {
-      image: b2,
+      image: "https://res.cloudinary.com/daa3y840x/image/upload/w_1000,ar_16:9,c_fill,g_auto,e_sharpen/v1734955025/cacfeb6d-209f-491b-9dc3-fd7863602f21_fm4f0s.jpg",
       heading: "Savor the finest catering options, designed just for you",
       subheading: "Innovative solutions for your needs.",
     },
     {
-      image: b3,
+      image:"https://res.cloudinary.com/daa3y840x/image/upload/v1734955032/fe792f76-ba07-4f55-a2c3-09b071045c4b_o6sb3k.jpg",
       heading: "Elevating your events with custom catering experiences",
       subheading: "Sign up to get started on your journey.",
     },
@@ -142,7 +141,7 @@ const Home = (props) => {
               Read More
             </button>
             <button className="border px-5 py-3 text-xl transition-all duration-200 border-white font-semibold bg-white text-[#f1a986] hover:bg-transparent hover:text-white rounded-md w-full sm:w-auto">
-              Purchase Ethalon
+            Plan Your Catering 
             </button>
           </div>
         </div>
