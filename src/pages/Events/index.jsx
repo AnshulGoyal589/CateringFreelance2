@@ -25,7 +25,10 @@ const EventHome = (props) => {
             <div className="event-list">
                 <div
                     className="corporate-event"
-                    style={{ backgroundImage: `url(${Corporate})` }}
+                    style={{ backgroundImage: `url("https://res.cloudinary.com/das5szw5j/image/upload/v1734984113/image_ocmsuo.jpg")`, 
+                        backgroundSize:'65% 100%',
+                    }}
+        
                     data-aos="fade-up"
                 >
                     <div className="placeholder"></div>
@@ -45,7 +48,7 @@ const EventHome = (props) => {
 
                 <div
                     className="social-event"
-                    style={{ backgroundImage: `url(${Social})` }}
+                    style={{ backgroundImage: `url(https://res.cloudinary.com/das5szw5j/image/upload/v1734984288/image_vbv5ns.jpg)` }}
                     data-aos="fade-up"
                 >
                     <div className="circle">
@@ -61,7 +64,8 @@ const EventHome = (props) => {
                 <div className="international-event" data-aos="fade-up">
                     <div
                         className="img-backdrop"
-                        style={{ backgroundImage: `url(${Yashobhoomi})` }}
+                        style={{ backgroundImage: `url(https://res.cloudinary.com/das5szw5j/image/upload/a_-90/v1734984480/image_lwboch.jpg)`  ,
+                     backgroundSize:"120% 100%"}}
                     >
                         <h2>International Conventions</h2>
                     </div>
@@ -76,7 +80,7 @@ const EventHome = (props) => {
 
                 <div
                     className="engagement"
-                    style={{ backgroundImage: `url(${Engagement})` }}
+                    style={{ backgroundImage: `url(https://res.cloudinary.com/das5szw5j/image/upload/v1734984212/image_hsjmoo.jpg)` }}
                     data-aos="fade-up"
                 >
                     <div className="simple">
@@ -92,7 +96,7 @@ const EventHome = (props) => {
 
                 <div className="birthday" data-aos="fade-up">
                     <div className="image-container">
-                        <img src={Birthday} alt="Birthday" />
+                        <img src={"https://res.cloudinary.com/das5szw5j/image/upload/a_-90/v1734984546/image_ad3ccr.jpg"} alt="Birthday" />
                     </div>
                     <div className="title">
                         <h2>Birthdays</h2>
@@ -108,7 +112,7 @@ const EventHome = (props) => {
 
                 <div
                     className="quick-links"
-                    style={{ backgroundImage: `url(${Wedding})` }}
+                    style={{ backgroundImage: `url(https://res.cloudinary.com/das5szw5j/image/upload/a_90/a_vflip/v1734984159/image_gfzag8.jpg})` }}
                     data-aos="fade-up"
                 >
                     <p>
@@ -142,7 +146,7 @@ const EventHome = (props) => {
                 </div>
                 <div
                     className="quick-links"
-                    style={{ backgroundImage: `url(${Wedding})` }}
+                    style={{ backgroundImage: `url(https://res.cloudinary.com/das5szw5j/image/upload/a_90/a_vflip/v1734984159/image_gfzag8.jpg)` }}
                     data-aos="fade-up"
                 >
                     <p>
