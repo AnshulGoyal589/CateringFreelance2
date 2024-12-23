@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import {useEffect} from 'react'
 import WhatWeDo from './WhatWeDo'
 import Band from './Band'
 import Video from './Video'
@@ -7,8 +7,8 @@ import Features from './Features'
 
 const index = (props) => {
   useEffect(()=>{
-    props.setPreview("About Us")
-  },[])
+    props.setPreview("About Us");
+},[])
   return (
     <div>
       <section>

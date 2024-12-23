@@ -1,18 +1,19 @@
-import React, { useState } from 'react';
+import React, { useState,useEffect } from 'react';
 import { FaEnvelope, FaMapMarkerAlt, FaPhone } from 'react-icons/fa';
 import { useForm } from 'react-hook-form';
 import emailjs from 'emailjs-com'; 
 import { toast } from 'react-hot-toast'; 
 import '../../index.css'
-
-const Index = () => {
+const Index = (props) => {
   const [formData, setFormData] = useState({
     message: '',
     name: '',
     email: '',
     reason: ''
   });
-
+  useEffect(()=>{
+    props.setPreview("Contact Us");
+},[])
   const [isSubmitting, setIsSubmitting] = useState(false);
   const { register, handleSubmit, formState: { errors }, reset } = useForm();
 

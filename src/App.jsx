@@ -19,7 +19,9 @@ const App=()=>{
                 <Route path="/events" element={<EventHome setPreview={setPageData}/>}/>
                 <Route path="/about-us" element={<AboutUs setPreview={setPageData}/>}/>
                 <Route path="/contact-us" element={<ContactUs setPreview={setPageData}/>}/>
-                <Route path="/corporate-event" element={<EventMenu setPreview={setPageData}/>}/>
+                <Route path="/corporate-event" element={<EventMenu setPreview={setPageData} eventType="Corporate Events"/>}/>
+                <Route path="/social-event" element={<EventMenu setPreview={setPageData} eventType="Social Events"/>}/>
+                <Route path="/international-event" element={<EventMenu setPreview={setPageData} eventType="International Events"/>}/>
             </Routes>
         </Router>
         <Footer/>
