@@ -112,7 +112,7 @@ const EventHome = (props) => {
 
                 <div
                     className="quick-links"
-                    style={{ backgroundImage: `url(https://res.cloudinary.com/das5szw5j/image/upload/a_90/a_vflip/v1734984159/image_gfzag8.jpg})` }}
+                    style={{ backgroundImage: `url(https://res.cloudinary.com/das5szw5j/image/upload/a_90/a_vflip/v1734984159/image_gfzag8.jpg)` }}
                     data-aos="fade-up"
                 >
                     <p>

@@ -502,10 +502,10 @@
     }
 }
 @media (max-width:400px){
-    span {
+     span {
         display:none;
-    }
-    .event-list >div{
+    } 
+    /* .event-list >div{
         max-height:10px;
     }
     .birthday .description{
@@ -516,5 +516,23 @@
     }
     .social-event .circle h1{
         font-size:larger;
+    } */
+    /* .event-list >*{
+        scale:0.8;
+    } */
+    .event-list > div{
+        max-height: 220px;
+        min-height: 220px;
+    }
+    .event-list> .social-event{
+        max-height: 220px;
+        min-height: 220px;
+    }
+    .event-list> .quick-links{
+        max-height: 220px;
+        min-height: 220px;
+    }
+    .birthday{
+        display:none;
     }
 }
