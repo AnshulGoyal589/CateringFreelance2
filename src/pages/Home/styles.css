@@ -1,0 +1,14 @@
+.service-item {
+    opacity: 0;
+    transform: translateY(10px);
+    transition: opacity 2s ease, transform 1.2s ease; /* Increased to 1.2s for smoother effect */
+  }
+  
+  .service-item.opacity-100 {
+    opacity: 1;
+  }
+  
+  .service-item.translate-y-0 {
+    transform: translateY(0);
+  }
+  

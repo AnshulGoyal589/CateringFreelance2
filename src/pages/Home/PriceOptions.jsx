@@ -1,9 +1,7 @@
 import React, { useEffect } from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css'; 
-import i1 from '../../assets/i1.jpg';
-import i2 from '../../assets/i2.jpg';
-import i3 from '../../assets/i3.jpg';
+
 import { FaCheck } from 'react-icons/fa';
 import '../../index.css';
 

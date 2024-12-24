@@ -1,5 +1,4 @@
 import React, { useEffect } from 'react';
-import Scard from './Scard';
 import { FaUtensils, FaClipboard, FaUsers, FaHandshake, FaTrophy, FaMicrophone } from 'react-icons/fa';
 import './styles.css';
 import AOS from 'aos';
@@ -41,6 +40,7 @@ const Service = () => {
 
   useEffect(() => {
     AOS.init({
+      offset:0,
       duration: 400,
       once: true,
     });
@@ -61,7 +61,7 @@ const Service = () => {
             key={index}
             className="flex gap-5 p-4 bg-gray-100 rounded-lg shadow-md max-h-[300px] overflow-hidden"
             data-aos="fade-up"
-            data-aos-delay={index * 40}
+            
           >
             <div className="icon flex justify-center items-center text-4xl sm:text-3xl md:text-4xl mb-4 w-14 h-14 sm:w-16 sm:h-16 md:w-20 md:h-20">
               {service.icon}

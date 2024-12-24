@@ -40,6 +40,7 @@ const Features = () => {
 
   useEffect(() => {
     AOS.init({
+      offest:100,
       duration: 1000, 
       once: true, 
     });

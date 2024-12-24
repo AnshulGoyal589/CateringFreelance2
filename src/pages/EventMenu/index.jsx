@@ -12,6 +12,7 @@ const EventMenu = (props) => {
         props.setPreview(props.eventType);
         AOS.init({
             duration: 500, 
+            once:true,
         });
     }, []);
 

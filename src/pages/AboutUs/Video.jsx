@@ -1,7 +1,6 @@
 import React, { useState, useRef } from 'react';
 import ReactPlayer from 'react-player';
 import { CiPlay1, CiPause1 } from "react-icons/ci";
-import Banner from '../../assets/banner.mp4';
 
 const Video = () => {
   const [playing, setPlaying] = useState(false);
@@ -52,13 +51,13 @@ and continuously improving our offerings to exceed expectations.
               <div className="transition-transform duration-300">
                 <ReactPlayer
                   ref={playerRef}
-                  url={Banner}
+                  url='https://res.cloudinary.com/daa3y840x/video/upload/v1735048541/Banner_jnxwli.mp4'
                   playing={playing}
                   muted
                   playsinline
                   width="100%"
                   height="100%"
-                  className="object-cover"
+                  className="object-scale-down"
                   onEnded={handleVideoEnd}
                   onProgress={handleProgress}
                 />

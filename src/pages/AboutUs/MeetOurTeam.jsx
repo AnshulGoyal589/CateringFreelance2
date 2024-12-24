@@ -4,9 +4,6 @@ import Slider from 'rc-slider';
 import 'rc-slider/assets/index.css';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-import c1 from '../../assets/c1.jpg'
-import c2 from '../../assets/c2.jpg'
-import c3 from '../../assets/c3.jpg'
 
 
 const MeetOurTeam = () => {
@@ -39,17 +36,17 @@ const MeetOurTeam = () => {
     {
       chefName: 'Chef Gordon Ramsay',
       oneLinerTextForChef: 'A fiery kitchen genius who redefines the art of cooking with precision and passion.',
-      image:c1,
+      image:"https://res.cloudinary.com/daa3y840x/image/upload/w_1000,c_fill,ar_1:1,g_auto,r_max,bo_5px_solid_red,b_rgb:262c35/v1735058457/c1_rb5hk8.jpg",
     },
     {
       chefName: 'Chef Jamie Oliver',
       oneLinerTextForChef: 'An advocate of healthy eating, creating simple, delicious dishes with fresh ingredients.',
-      image:c2,
+      image:"https://res.cloudinary.com/daa3y840x/image/upload/w_1000,c_fill,ar_1:1,g_auto,r_max,bo_5px_solid_red,b_rgb:262c35/v1735058455/c3_drnqul.jpg",
     },
     {
       chefName: 'Chef Nigella Lawson',
       oneLinerTextForChef: 'A warm and indulgent culinary expert, known for her rich, comforting flavors and passion for food.',
-      image:c3,
+      image:"https://res.cloudinary.com/daa3y840x/image/upload/w_1000,c_fill,ar_1:1,g_auto,r_max,bo_5px_solid_red,b_rgb:262c35/v1735058452/c2_elgtmt.jpg",
     },
   ];
 

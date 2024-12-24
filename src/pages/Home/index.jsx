@@ -4,22 +4,18 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import { Navigation, Pagination } from "swiper/modules";
-import b1 from "../../assets/b1.avif";
-import b2 from "../../assets/b2.avif";
-import b3 from "../../assets/b3.avif";
 import PriceOptions from "./PriceOptions";
 import CardComponent from "./CardComponent";
 import "../../index.css";
 import CateringService from "./CateringService";
 import Service from "./Service";
-import CompSlide from './CompSlide'
 import Testimonial from "./Testimonial";
 import CateringEvents from "./CateringEvents";
 import News from "./News";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { useInView } from "react-intersection-observer";
-
+import { useNavigate } from "react-router";
 const slideAnimations = `
   @keyframes slideDown {
     0% {
@@ -56,6 +52,7 @@ const slideAnimations = `
 `;
 
 const Home = (props) => {
+  const navigate=useNavigate();
   const [animationKey, setAnimationKey] = useState(0);
   useEffect(()=>{
     props.setPreview("n/a");
@@ -136,7 +133,9 @@ const Home = (props) => {
           </h2>
 
           <div className="animate-buttons flex mt-3 flex-col sm:flex-row gap-x-4 gap-y-4 sm:gap-y-0">
-            <button className="border px-5 py-3 text-xl transition-all duration-200 border-[#f1a986] font-semibold text-white bg-[#f1a986] hover:text-peach hover:bg-transparent rounded-md w-full sm:w-auto">
+            <button className="border px-5 py-3 text-xl transition-all duration-200 border-[#f1a986] font-semibold text-white bg-[#f1a986] hover:text-peach hover:bg-transparent rounded-md w-full sm:w-auto"
+            onClick={() => navigate("/about-us")}
+            >
               Read More
             </button>
             <button className="border px-5 py-3 text-xl transition-all duration-200 border-white font-semibold bg-white text-[#f1a986] hover:bg-transparent hover:text-white rounded-md w-full sm:w-auto">

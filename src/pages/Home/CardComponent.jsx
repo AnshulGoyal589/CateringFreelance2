@@ -4,10 +4,6 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import { Navigation, Pagination } from 'swiper/modules';
-import s1 from '../../assets/s1.jpg';
-import s2 from '../../assets/s2.jpg';
-import s3 from '../../assets/s3.jpg';
-import s4 from '../../assets/s4.jpg';
 import { MdOutlineKeyboardArrowLeft, MdOutlineKeyboardArrowRight } from "react-icons/md";
 
 const CardComponent = () => {
@@ -21,7 +17,7 @@ const CardComponent = () => {
         'Explore the world of flavors with our curated collection of delicious sides to complement any meal. Dive into a savory adventure!'
     },
     {
-      image: s4,
+      image: "https://res.cloudinary.com/daa3y840x/image/upload/v1735051511/s4_wklccw.jpg",
       heading: 'Beverages & More',
       subheading:
         'Quench your thirst and elevate your moments with our refreshing beverages and more, crafted to delight every palate.'

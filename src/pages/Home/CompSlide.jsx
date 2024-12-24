@@ -5,7 +5,8 @@ const CompSlide = ({ onSlideChange }) => {
   
 
   return (
-    <div className="">
+    <div className="flex flex-col">
+      {/* <Details/> */}
       <Navbar/>
     </div>
   );
