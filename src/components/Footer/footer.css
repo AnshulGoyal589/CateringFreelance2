@@ -6,8 +6,33 @@
     display:flex;
     flex-wrap: wrap;
 }
-.footer> div{
+.footer >.logo{
+    width:100%;
+    height:120px;
+    background-color: white;
+    display:flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content:center;
+    background-color:#eeebe1;
+}
+.footer >.logo img{
     height:100%;
+    position:relative;
+    top:0;
+    z-index: 15;
+}
+.footer > .logo >.hr{
+    position:relative;
+    top:-40%;
+    width:40%;
+    height:2px;
+    outline: 0.2px solid rgb(53, 22, 22) !important;
+    /* border-color: 1px solid black; */
+}
+.footer> div{
+    min-height:100%;
+    /* min-height: min-content; */
 }
 .footer .external-links{
     flex:0.8;

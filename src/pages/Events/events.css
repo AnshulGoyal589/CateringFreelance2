@@ -290,6 +290,7 @@
     grid-column: span 3;
     display:flex;
     border-bottom-right-radius: 8px;
+    overflow: hidden;
 }
 .birthday>div{
     height:100%;
@@ -498,13 +499,16 @@
     }
     .social-event .circle{
         margin-top:-3%;
-        width:30vw;
+        width:20vw;
     }
 }
 @media (max-width:400px){
      span {
         display:none;
     } 
+    .event-list {
+        height:1250px;
+    }
     /* .event-list >div{
         max-height:10px;
     }
@@ -520,19 +524,22 @@
     /* .event-list >*{
         scale:0.8;
     } */
+    .event-list *{    
+        font-size:95%;    
+    }
     .event-list > div{
-        max-height: 220px;
-        min-height: 220px;
+        max-height: 180px;
+        min-height: 180px;
     }
     .event-list> .social-event{
-        max-height: 220px;
-        min-height: 220px;
+        max-height: 180px;
+        min-height: 180px;
     }
     .event-list> .quick-links{
-        max-height: 220px;
-        min-height: 220px;
+        max-height: 180px;
+        min-height: 180px;
     }
-    .birthday{
-        display:none;
+    .event-list >.social-event .circle{
+        margin-top:-20%;
     }
 }

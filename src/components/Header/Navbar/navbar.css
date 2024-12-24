@@ -117,16 +117,12 @@ body{
         box-shadow:-5px 5px 20px black;
         gap:2%;
         background-color:white;
-        animation: expand 0.35s forwards;
-        /* border:5px solid #f4ac84; */
-        /* border-top:none;
-        border-right:none;
-        border-bottom: none; */
+        animation: expands 0.35s forwards;
     }
     .header .sidebar div{
         flex:1;
         display:flex;
-        align-items:center;
+        align-items:center; 
         justify-content:center;
         width:93%;
         color:white;
@@ -166,7 +162,7 @@ body{
             transform: translateX(-340px);
         }
     }
-    @keyframes expand{
+    @keyframes expands {
         0%{
             transform: translateX(0);
         }

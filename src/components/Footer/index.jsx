@@ -5,6 +5,10 @@ import FooterMail from "../../assets/header/FooterMail.png"
 const Footer=()=>{
     return (
         <footer className="footer">
+            <div className="logo">
+                <img src="https://res.cloudinary.com/das5szw5j/image/upload/v1735015555/image_erehmq.jpg"/>
+                <div className="hr"></div>
+            </div>
             <div class="external-links">
                 <h1>Quick Links:</h1>
                 <ul className="fast-links">
