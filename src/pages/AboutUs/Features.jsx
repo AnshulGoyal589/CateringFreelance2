@@ -40,13 +40,14 @@ const Features = () => {
 
   useEffect(() => {
     AOS.init({
+      offest:100,
       duration: 1000, 
       once: true, 
     });
   }, []);
 
   return (
-    <div className="flex flex-col mt-4 py-20 bg-[#f7f7f7]">
+    <div className="flex lg:min-h-[300px] flex-col mt-4 py-20 bg-[#f7f7f7]">
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 px-4">
         {servicesInfo.map((service, index) => (
           <div

@@ -23,7 +23,7 @@ const index = (props) => {
       <section className="py-10 sm:py-12 lg:py-16 bg-white">
         <MeetOurTeam />
       </section>
-      <section>
+      <section className='min-w-full'>
         <Features/>
       </section>
 

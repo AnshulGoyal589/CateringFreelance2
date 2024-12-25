@@ -4,11 +4,21 @@ import Slider from 'rc-slider';
 import 'rc-slider/assets/index.css';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-import c1 from '../../assets/c1.jpg'
-import c2 from '../../assets/c2.jpg'
-import c3 from '../../assets/c3.jpg'
+import { useNavigate } from 'react-router';
 
+const useNavigateAndScroll = () => {
+  const navigate = useNavigate();
+  
+  const navigateAndScroll = (path) => {
+    navigate(path);
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
+  };
 
+  return navigateAndScroll;
+};
 const MeetOurTeam = () => {
   const [progress, setProgress] = useState([0, 0, 0]);
 
@@ -25,6 +35,7 @@ const MeetOurTeam = () => {
     { label: 'Marketing', value: 60 },
     { label: 'Management', value: 75 },
   ];
+  const navigateAndScroll = useNavigateAndScroll();
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -39,17 +50,17 @@ const MeetOurTeam = () => {
     {
       chefName: 'Chef Gordon Ramsay',
       oneLinerTextForChef: 'A fiery kitchen genius who redefines the art of cooking with precision and passion.',
-      image:c1,
+      image:"https://res.cloudinary.com/daa3y840x/image/upload/w_1000,c_fill,ar_1:1,g_auto,r_max,bo_5px_solid_red,b_rgb:262c35/v1735058457/c1_rb5hk8.jpg",
     },
     {
       chefName: 'Chef Jamie Oliver',
       oneLinerTextForChef: 'An advocate of healthy eating, creating simple, delicious dishes with fresh ingredients.',
-      image:c2,
+      image:"https://res.cloudinary.com/daa3y840x/image/upload/w_1000,c_fill,ar_1:1,g_auto,r_max,bo_5px_solid_red,b_rgb:262c35/v1735058455/c3_drnqul.jpg",
     },
     {
       chefName: 'Chef Nigella Lawson',
       oneLinerTextForChef: 'A warm and indulgent culinary expert, known for her rich, comforting flavors and passion for food.',
-      image:c3,
+      image:"https://res.cloudinary.com/daa3y840x/image/upload/w_1000,c_fill,ar_1:1,g_auto,r_max,bo_5px_solid_red,b_rgb:262c35/v1735058452/c2_elgtmt.jpg",
     },
   ];
 
@@ -68,7 +79,9 @@ const MeetOurTeam = () => {
                 <p className="text-gray-600 mb-6 text-xl">
                 We are a passionate group of culinary experts dedicated to making your events memorable through extraordinary catering services.
                 </p>
-                <button className="px-6 py-3 border border-peach bg-[#f1a986] text-white rounded-md hover:bg-white hover:text-[#f1a986] transition-colors duration-300">
+                <button className="px-6 py-3 border border-peach bg-[#f1a986] text-white rounded-md hover:bg-white hover:text-[#f1a986] transition-colors duration-300"
+                onClick={()=>navigateAndScroll("/contact-us")}
+                >
                   CONTACT US
                 </button>
               </div>
@@ -127,7 +140,9 @@ const MeetOurTeam = () => {
               <p className="text-gray-600 text-xl">
               We take pride in our dedication to quality, creativity, and exceptional service, ensuring your catering needs are met with excellence.
               </p>
-              <button className="px-6 py-3 bg-[#f1a986] text-white rounded-md hover:bg-white hover:text-[#f1a986] transition-colors duration-300 border border-[#f1a986]">
+              <button className="px-6 py-3 bg-[#f1a986] text-white rounded-md hover:bg-white hover:text-[#f1a986] transition-colors duration-300 border border-[#f1a986]"
+              onClick={()=>navigateAndScroll("/events")}
+              >
                 GET STARTED
               </button>
             </div>

@@ -1,12 +1,22 @@
 import React from "react";
 import "aos/dist/aos.css"; 
-import e1 from "../../assets/e1.jpg";
-import e2 from "../../assets/e2.jpg";
-import e3 from "../../assets/e3.jpg";
-import e4 from "../../assets/e4.jpg";
-import e5 from "../../assets/e5.jpg";
+import { useNavigate } from 'react-router';
 
+const useNavigateAndScroll = () => {
+  const navigate = useNavigate();
+  
+  const navigateAndScroll = (path) => {
+    navigate(path);
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
+  };
+
+  return navigateAndScroll;
+};
 const CateringEvents = () => {
+  const navigateAndScroll = useNavigateAndScroll();
   const data = [
     { image: "https://res.cloudinary.com/daa3y840x/image/upload/a_-90/v1734955230/991e61cd-3a03-48ab-b80d-214a61fe13c6_ffcbfv.jpg", text: "Special Event Catering" },
     { image: "https://res.cloudinary.com/daa3y840x/image/upload/a_-90/v1734955199/3b43b671-3837-4ab5-ae93-b4b4f3a8b27a_xis2va.jpg", text: "Catering Holiday Buffet" },
@@ -40,12 +50,15 @@ const CateringEvents = () => {
             </div>
             <div className="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-lg">
               <div className="flex flex-col justify-center items-center w-full h-full">
-                <button 
+                <button
+                // onClick={()=>} 
                   className="bg-[#f1a986] text-white px-6 py-2 rounded-lg 
                     invisible opacity-0 group-hover:visible group-hover:opacity-100
                     transform -translate-y-2 group-hover:translate-y-0
                     transition-all delay-150 duration-300
                     hover:bg-[#e08b66]"
+                    onClick={() => navigateAndScroll("/events")}
+                
                 >
                   Read More
                 </button>

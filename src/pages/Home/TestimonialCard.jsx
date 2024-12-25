@@ -4,23 +4,17 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import { Navigation } from 'swiper/modules';
 import { MdOutlineKeyboardArrowLeft, MdOutlineKeyboardArrowRight } from "react-icons/md";
-import i1 from '../../assets/t1.png';
-import i2 from '../../assets/t2.png';
-import i3 from '../../assets/t3.png';
-import i4 from '../../assets/t4.png';
-import i5 from '../../assets/t1.png';
-import i6 from '../../assets/t2.png';
 
 const TestimonialCard = () => {
   const swiperRef = useRef(null);
 
   const testimonials = [
-    { id: 1, title: "ALWAYS GRATEFUL", text: "The service was exceptional, and the staff went above and beyond to meet my expectations. ", name: "Elaine T.", location: "Kansas City, Missouri", image: i1 },
-    { id: 2, title: "SIMPLY AMAZING", text: "I had an amazing experience! Everything was seamless and exceeded my expectations.", name: "John D.", location: "Chicago, Illinois", image: i2 },
-    { id: 3, title: "BEST EXPERIENCE", text: "This was by far the best experience I've ever had. Highly professional and efficient. ", name: "Sarah K.", location: "New York, NY", image: i3 },
-    { id: 4, title: "HIGHLY RECOMMENDED", text: "I can't recommend this enough. The attention to detail and care were outstanding.", name: "Mike L.", location: "Austin, Texas", image: i4 },
-    { id: 5, title: "VERY SATISFIED", text: "I'm extremely satisfied with the results. Their team truly knows what they're doing. ", name: "Nina P.", location: "Seattle, Washington", image: i5 },
-    { id: 6, title: "WONDERFUL SERVICE", text: "The level of service I received was wonderful. Every interaction was pleasant and efficient.", name: "Oliver R.", location: "Denver, Colorado", image: i6 },
+    { id: 1, title: "ALWAYS GRATEFUL", text: "The service was exceptional, and the staff went above and beyond to meet my expectations. ", name: "Elaine T.", location: "Kansas City, Missouri", image: "https://res.cloudinary.com/daa3y840x/image/upload/v1735053053/t2_cgvoce.png" },
+    { id: 2, title: "SIMPLY AMAZING", text: "I had an amazing experience! Everything was seamless and exceeded my expectations.", name: "John D.", location: "Chicago, Illinois", image: "https://res.cloudinary.com/daa3y840x/image/upload/v1735053051/t1_ninxtd.png" },
+    { id: 3, title: "BEST EXPERIENCE", text: "This was by far the best experience I've ever had. Highly professional and efficient. ", name: "Sarah K.", location: "New York, NY", image: "https://res.cloudinary.com/daa3y840x/image/upload/v1735053058/t4_hjy8hl.png" },
+    { id: 4, title: "HIGHLY RECOMMENDED", text: "I can't recommend this enough. The attention to detail and care were outstanding.", name: "Mike L.", location: "Austin, Texas", image: "https://res.cloudinary.com/daa3y840x/image/upload/v1735053055/t3_skuta2.png" },
+    { id: 5, title: "VERY SATISFIED", text: "I'm extremely satisfied with the results. Their team truly knows what they're doing. ", name: "Nina P.", location: "Seattle, Washington", image: "https://res.cloudinary.com/daa3y840x/image/upload/v1735053051/t1_ninxtd.png" },
+    { id: 6, title: "WONDERFUL SERVICE", text: "The level of service I received was wonderful. Every interaction was pleasant and efficient.", name: "Oliver R.", location: "Denver, Colorado", image: "https://res.cloudinary.com/daa3y840x/image/upload/v1735053058/t4_hjy8hl.png" },
   ];
 
   return (
@@ -30,14 +24,13 @@ const TestimonialCard = () => {
         spaceBetween={30}
         loop={true}
         modules={[Navigation]}
-        // navigation
         breakpoints={{
           640: {
-            slidesPerView: 2, // 2 slides on small devices (like phones and small laptops)
+            slidesPerView: 2, 
             spaceBetween: 20,
           },
           1024: {
-            slidesPerView: 3, // 3 slides on larger devices
+            slidesPerView: 3, 
             spaceBetween: 30,
           },
         }}
