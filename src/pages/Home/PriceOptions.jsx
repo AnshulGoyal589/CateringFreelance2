@@ -1,16 +1,45 @@
 import React, { useEffect } from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css'; 
-
+import { useNavigate } from 'react-router-dom';
 import { FaCheck } from 'react-icons/fa';
 import '../../index.css';
+const useNavigateAndScroll = () => {
+  const navigate = useNavigate();
+  
+  const navigateAndScroll = (path) => {
+    navigate(path);
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
+  };
+
+  return navigateAndScroll;
+};
 
 const PriceOptions = () => {
+  
+  const navigateAndScroll = useNavigateAndScroll();
   useEffect(() => {
+    // Initialize AOS with optimized settings
     AOS.init({
-      duration: 100, 
-      easing: 'ease-in-out', 
+      duration: 800,
+      easing: 'ease-out',
+      once: true,
+      offset: 50,
+      delay: 0,
+      mirror: false,
+      anchorPlacement: 'top-bottom',
     });
+
+    // Refresh AOS when component mounts
+    AOS.refresh();
+
+    return () => {
+      // Clean up AOS instances on component unmount
+      AOS.refresh();
+    };
   }, []);
 
   return (
@@ -24,7 +53,9 @@ const PriceOptions = () => {
 
       <div className="flex flex-wrap lg:flex-nowrap justify-between gap-6 w-full font-semibold max-w-7xl">
         {/* Expert Buffets */}
-        <div className="flex flex-col text-pure-greys-300 bg-f5f5f0 p-6 items-center w-full font-semibold">
+        <div className="flex flex-col text-pure-greys-300 bg-f5f5f0 p-6 items-center w-full font-semibold" 
+             data-aos="fade-up" 
+             data-aos-delay="100">
           <h1 className="text-black text-2xl">Expert Buffets</h1>
           <div className="rounded-full h-20 w-20 text-[#f1a986]">
             <img
@@ -52,7 +83,8 @@ const PriceOptions = () => {
             ))}
             <button
               className="mt-3 bg-transparent hover:bg-[#f1a986] border-[#f1a986] border px-3 py-3 transition-all duration-300 text-[#f1a986] hover:text-white w-full font-semibold rounded-full text-center"
-              data-aos="zoom-in"
+              onClick={() => navigateAndScroll("/events")}
+              
             >
               Get Started
             </button>
@@ -60,7 +92,9 @@ const PriceOptions = () => {
         </div>
 
         {/* Ultimate Buffets */}
-        <div className="flex flex-col text-pure-greys-300 bg-white p-6 items-center w-full font-semibold">
+        <div className="flex flex-col text-pure-greys-300 bg-white p-6 items-center w-full font-semibold"
+             data-aos="fade-up"
+             data-aos-delay="200">
           <h1 className="text-2xl text-black">Ultimate Buffets</h1>
           <div className="rounded-full h-20 w-20 text-[#f1a986]">
             <img
@@ -88,7 +122,8 @@ const PriceOptions = () => {
             ))}
             <button
               className="mt-3 hover:bg-transparent bg-[#f1a986] border-[#f1a986] border px-3 py-3 transition-all duration-300 hover:text-[#f1a986] text-white w-full font-semibold mx-auto rounded-full text-center"
-              data-aos="zoom-in"
+              onClick={() => navigateAndScroll("/events")}
+              
             >
               Get Started
             </button>
@@ -96,7 +131,9 @@ const PriceOptions = () => {
         </div>
 
         {/* Specialty Buffets */}
-        <div className="flex flex-col text-pure-greys-300 bg-f5f5f0 p-6 items-center w-full font-semibold">
+        <div className="flex flex-col text-pure-greys-300 bg-f5f5f0 p-6 items-center w-full font-semibold"
+             data-aos="fade-up"
+             data-aos-delay="300">
           <h1 className="text-2xl text-black">Specialty Buffets</h1>
           <div className="rounded-full h-20 w-20 text-[#f1a986]">
             <img
@@ -124,7 +161,8 @@ const PriceOptions = () => {
             ))}
             <button
               className="mt-3 bg-transparent hover:bg-[#f1a986] border-[#f1a986] border px-3 py-3 transition-all duration-300 text-[#f1a986] hover:text-white w-full font-semibold rounded-full text-center"
-              data-aos="zoom-in"
+              onClick={() => navigateAndScroll("/events")}
+              
             >
               Get Started
             </button>
@@ -132,12 +170,15 @@ const PriceOptions = () => {
         </div>
       </div>
 
-      <div className="mt-2 py-5 flex flex-col items-center justify-between gap-3">
+      <div className="mt-2 py-5 flex flex-col items-center justify-between gap-3" 
+           data-aos="fade-up"
+           >
         <h1 className="text-[1.5rem]">Need more? Request a free quote</h1>
         <p className="text-lg text-richblack-100">We tailor our services to meet your needs.</p>
         <button
-          className="px-6 font-semibold py-3 border min-w-52 border-richblack-700 transition-all duration-300 hover:text-richblack-700 hover:bg-white bg-richblack-700 text-white"
-          data-aos="zoom-in"
+          className="px-6 font-semibold py-3 border min-w-52 border-richblack-700 transition-all duration-300 hover:text-richblack-700 hover:bg-white bg-richblack-700 text-white"  
+          onClick={() => navigateAndScroll("/contact-us")}
+        
         >
           Contact Us
         </button>

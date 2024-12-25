@@ -138,7 +138,9 @@ const Home = (props) => {
             >
               Read More
             </button>
-            <button className="border px-5 py-3 text-xl transition-all duration-200 border-white font-semibold bg-white text-[#f1a986] hover:bg-transparent hover:text-white rounded-md w-full sm:w-auto">
+            <button className="border px-5 py-3 text-xl transition-all duration-200 border-white font-semibold bg-white text-[#f1a986] hover:bg-transparent hover:text-white rounded-md w-full sm:w-auto"
+            onClick={() => navigate("/contact-us")}
+            >
             Plan Your Catering 
             </button>
           </div>

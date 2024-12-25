@@ -4,8 +4,21 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import { Pagination } from 'swiper/modules';
+import { useNavigate } from 'react-router';
 
+const useNavigateAndScroll = () => {
+  const navigate = useNavigate();
+  
+  const navigateAndScroll = (path) => {
+    navigate(path);
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
+  };
 
+  return navigateAndScroll;
+};
 const News = () => {
   const data = [
     {
@@ -45,7 +58,7 @@ const News = () => {
       text: 'From the creation of lights, the days unfold with possibilities, each one more vibrant and full of purpose than the last.',
     },
   ];
-
+  const navigateAndScroll = useNavigateAndScroll();
   const formatDate = (dateString) => {
     const date = new Date(dateString);
     const options = { year: 'numeric', month: 'long', day: 'numeric' };
@@ -105,7 +118,10 @@ const News = () => {
                       <p className="text-gray-500 text-sm flex-grow">
                         {slide.text}
                       </p>
-                      <button className="mt-4 px-4 py-2 bg-[#f1a986] text-white rounded-md hover:bg-[#d9886a] transition w-full sm:w-auto">
+                      <button className="mt-4 px-4 py-2 bg-[#f1a986] text-white rounded-md hover:bg-[#d9886a] transition w-full sm:w-auto"
+                      onClick={() => navigateAndScroll("/about-us")}
+                      
+                      >
                         Read More
                       </button>
                     </div>

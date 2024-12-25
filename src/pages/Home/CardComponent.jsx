@@ -5,10 +5,24 @@ import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import { Navigation, Pagination } from 'swiper/modules';
 import { MdOutlineKeyboardArrowLeft, MdOutlineKeyboardArrowRight } from "react-icons/md";
+import { useNavigate } from 'react-router';
 
+const useNavigateAndScroll = () => {
+  const navigate = useNavigate();
+  
+  const navigateAndScroll = (path) => {
+    navigate(path);
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
+  };
+
+  return navigateAndScroll;
+};
 const CardComponent = () => {
   const swiperRef = useRef(null);
-
+  const navigateAndScroll = useNavigateAndScroll();
   const slidesData = [
     {
       image: "https://res.cloudinary.com/daa3y840x/image/upload/v1734955084/bdda474e-5221-432b-9f8a-076db1e9a26b_ppxtgy.jpg",
@@ -75,7 +89,9 @@ const CardComponent = () => {
                 <p className="text-sm sm:text-base md:text-lg text-gray-600 leading-relaxed">
                   {slide.subheading}
                 </p>
-                <button className="border px-4 py-2 transition-all duration-200 border-[#f1a986] text-[#f1a986] hover:bg-[#f1a986] hover:text-white rounded-md text-sm sm:text-base lg:text-lg xl:text-xl">
+                <button className="border px-4 py-2 transition-all duration-200 border-[#f1a986] text-[#f1a986] hover:bg-[#f1a986] hover:text-white rounded-md text-sm sm:text-base lg:text-lg xl:text-xl"
+                onClick={() => navigateAndScroll("/about-us")}
+                >
                   Read More
                 </button>
               </div>
