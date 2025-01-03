@@ -279,7 +279,6 @@
     text-shadow:10px 10px 50px white;
 }
 .engagement .simple button{
-    border:0.5px solid salmon;
     margin-top:-2%;
     width:25%;
     height:40px;
@@ -329,7 +328,6 @@
 }
 .birthday .description{
     flex:1.5;
-    border-bottom:10px solid #f09c6e;
     border-bottom-right-radius: 8px;
     display:flex;
     align-items:center;
