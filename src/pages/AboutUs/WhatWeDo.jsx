@@ -5,13 +5,13 @@ const WhatWeDo = () => {
   const data = [
     {
       no: 1,
-      heading: "Our Mission",
-      text: "Our mission is to empower individuals through education and innovation, creating a sustainable future for all."
+      heading: "Our Philosophy",
+      text: "Our philosophy is simple: to infuse every occasion with a sense of enchantment through exceptional flavours and unparalleled attention to detail."
     },
     {
       no: 2,
       heading: "Our Objectives",
-      text: "Our objectives include fostering growth, promoting collaboration, and ensuring inclusive opportunities for all stakeholders."
+      text: " At The Savoury Soiree, we don’t just cater events—we create cherished memories. "
     },
     {
       no: 3,
@@ -38,7 +38,11 @@ const WhatWeDo = () => {
         </h1>
         <div className="text-richblack-300">
           <p className="mb-4 text-xl font-semibold">
-          We specialize in creating tailored catering solutions for events of all sizes. Whether it’s a wedding, corporate event, or private party, our focus is on quality, creativity, and flawless execution.
+          Welcome to <span className='italic text-brown-50 text-2xl'> The Savoury Soiree</span>, where culinary artistry meets sophisticated 
+elegance. We are purveyors of exceptional catering, dedicated to transforming 
+your celebrations into unforgettable experiences. Whether an intimate soirée, a 
+grand wedding, or a refined corporate affair, we weave flavour, style, and flair 
+into every detail. 
           </p>
           <ul className="list-disc text-lg font-semibold pl-16 space-y-2">
           <li>Customized menus to suit every event theme and preference</li>

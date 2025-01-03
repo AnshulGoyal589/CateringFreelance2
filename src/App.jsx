@@ -24,7 +24,9 @@ const App=()=>{
                 <Route path="/international-event" element={<EventMenu setPreview={setPageData} eventType="International Events"/>}/>
             </Routes>
         </Router>
-        <Footer/> 
+        <div>
+        <Footer/>
+        </div>
         </div>
     )
 }
