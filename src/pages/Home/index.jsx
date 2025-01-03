@@ -13,6 +13,7 @@ import Testimonial from "./Testimonial";
 import CateringEvents from "./CateringEvents";
 import News from "./News";
 import AOS from "aos";
+import FilmList from "./AboutUs";
 import "aos/dist/aos.css";
 import { useInView } from "react-intersection-observer";
 import { useNavigate } from "react-router";
@@ -162,7 +163,9 @@ const Home = (props) => {
       <div className="min-h-[700px]">
         <CateringService />
       </div>
-
+      <div>
+        <FilmList/>
+      </div>
       <div className="">
         <Service />
       </div>

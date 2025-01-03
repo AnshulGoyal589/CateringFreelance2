@@ -26,29 +26,29 @@ const CardComponent = () => {
   const slidesData = [
     {
       image: "https://res.cloudinary.com/daa3y840x/image/upload/v1734955084/bdda474e-5221-432b-9f8a-076db1e9a26b_ppxtgy.jpg",
-      heading: 'Savory Sides',
+      heading: 'Luxurious Presentation',
       subheading:
-        'Explore the world of flavors with our curated collection of delicious sides to complement any meal. Dive into a savory adventure!'
+        'A perfect harmony of visual splendour and gastronomic delight,ensuring every dish is a feast for the senses.'
     },
     {
       image: "https://res.cloudinary.com/daa3y840x/image/upload/v1735051511/s4_wklccw.jpg",
-      heading: 'Beverages & More',
+      heading: 'Gourmet Creations',
       subheading:
-        'Quench your thirst and elevate your moments with our refreshing beverages and more, crafted to delight every palate.'
+      "Artfully creafted menus showcasing the finest ingredients and inspired by the world's most exquisite cuisines."
     }
     ,
     {
       image: "https://res.cloudinary.com/daa3y840x/image/upload/v1734955239/85213c7a-1620-4d35-bbe5-8f41e43b681e_demf7u.jpg",
-      heading: 'Hygiene First ',
+      heading: 'Impeccable Service ',
       subheading:
-        'Discover vibrant, fresh, and flavorful vegetables that transform any dish into a masterpiece of taste and nutritional value.'
+        'Our seasoned team of professionals is committed to delivering seamless hospitality, leaving you free to savor each moment.'
     },
     
     {
       image: "https://res.cloudinary.com/daa3y840x/image/upload/c_fill,w_1280,h_960/v1734955169/27f24880-cc5a-46ab-9b40-5d8fe12146b2_oho24q.jpg",
-      heading: 'Tempting Desserts',
+      heading: 'Taliored Culinary Experiences',
       subheading:
-        'Indulge in the sweetness of life with our tempting desserts that promise to satisfy your cravings and leave you wanting more.'
+        'Bespoke menus designed to complement your tastes, themes, and dietary preferences.'
     }
   ];
 
