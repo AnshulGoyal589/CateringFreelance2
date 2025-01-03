@@ -32,7 +32,7 @@ const FilmList = () => {
           <div 
             key={index} 
             className="film-card p-4 border rounded-lg shadow-md bg-cover bg-center text-center hover:bg-gray-100 transition-colors duration-300 relative group"
-            style={{ backgroundImage: `url(${film.poster})`, height: 'full', width:'full' }}
+            style={{ backgroundImage: `url(${film.poster})`, height: '300px',  }}
           >
             <div className="bg-opacity-50 h-full w-full bg flex items-center justify-center">
               <p className="text-transparent font-semibold text-lg">{film.name}</p>
