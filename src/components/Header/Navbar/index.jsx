@@ -1,87 +1,104 @@
-import { useState } from "react";
-import "./navbar.css";
-import MenuIcon from "../../../assets/header/MenuIcon.png";
-import CollapseArrow from "../../../assets/header/CollapseArrow.png";
-import logo from "../../../assets/Logo.png";
+import React, { useState } from 'react';
+import { X, Menu } from 'lucide-react';
+import { Link } from 'react-router-dom';
+import logo from '../../../assets/Logo.png';
 
 const Navbar = () => {
-  const [sideBar, setSideBar] = useState(false);
+  const [isOpen, setIsOpen] = useState(false);
   
+  const navLinks = [
+    { to: '/', label: 'Home' },
+    { to: '/events', label: 'Events' },
+    { to: '/contact-us', label: 'Contact Us' },
+    { to: '/about-us', label: 'About Us' },
+    { to: '/blog', label: 'Blog' }
+  ];
+
   return (
-    <div className="navbar">
-      <div className="title flex items-center justify-center space-x-4">
-        <div className="flex items-center">
-          <img
-            src={logo}
-            alt="Savoury Soirée Logo"
-            className="h-16 w-auto object-contain"
-          />
-        </div>
-        <div className="flex flex-col">
-          <span 
-            className="text-xl font-bold text-gray-800"
-            style={{ fontFamily: "'Playfair Display', serif" }}
-          >
-            Savoury Soirée
-          </span>
-          <span 
-            className="text-sm text-gray-600"
-            style={{ fontFamily: "'Playfair Display', serif" }}
-          >
-            Fine Dining & Events
-          </span>
-        </div>
-      </div>
+    <nav className="fixed top-0 left-0 right-0 z-50 bg-white shadow-md">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="flex justify-between items-center h-20">
+          {/* Logo and Brand */}
+          <Link to="/" className="flex items-center space-x-4 group">
+            <div className="w-36 h-16 overflow-hidden">
+              <img 
+                src={logo} 
+                alt="Savoury Soirée Logo"
+                className="w-full h-full object-contain transition-transform duration-300 group-hover:scale-105"
+              />
+            </div>
+            <div className="flex flex-col">
+              <span className="text-xl font-serif font-bold text-gray-900 group-hover:text-[#f1a986] transition-colors duration-200">
+                Savoury Soirée
+              </span>
+              <span className="text-sm font-serif text-gray-600">
+                Fine Dining & Events
+              </span>
+            </div>
+          </Link>
 
-      <div className="navigation">
-        <div>
-          <a href="/" onClick={{}}><button>HOME</button></a>
-        </div>
-        <div>
-          <a href="/events"><button>EVENTS</button></a>
-        </div>
-        <div>
-          <a href="/contact-us"><button>CONTACT US</button></a>
-        </div>
-        <div>
-          <a href="/about-us"><button>ABOUT US</button></a>
-        </div>
-        <div>
-          <a href="/blog"><button>BLOG</button></a>
-        </div>
-      </div>
-
-      <div className="optional">
-        <img src={MenuIcon} onClick={() => { setSideBar(true) }} />
-      </div>
-
-      {sideBar ?
-        <>
-          <div className="sidebar">
-            <div>
-              <text><a href="/">Home</a></text>
-            </div>
-            <div>
-              <text><a href="/events">Events</a></text>
-            </div>
-            <div>
-              <text><a href="/contact-us">Contact Us</a></text>
-            </div>
-            <div>
-              <text><a href="/about-us">About Us</a></text>
-            </div>
-            <div>
-              <text><a href="/">Blog</a></text>
-            </div>
+          {/* Desktop Navigation */}
+          <div className="hidden md:flex items-center space-x-8">
+            {navLinks.map((link) => (
+              <Link
+                key={link.to}
+                to={link.to}
+                className="text-gray-600 hover:text-[#f1a986] px-3 py-2 text-sm font-medium transition-colors duration-200 relative after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-[#f1a986] after:transition-all after:duration-300 hover:after:w-full"
+              >
+                {link.label}
+              </Link>
+            ))}
+            <Link
+              to="/contact-us"
+              className="bg-[#f1a986] text-white px-6 py-2 rounded-md text-sm font-medium hover:bg-[#e08b66] transition-all duration-200 shadow-sm hover:shadow-md"
+            >
+              Reserve Now
+            </Link>
           </div>
-          <div className="collapse-sidebar" onClick={() => { setSideBar(false) }} style={{ fontFamily: "sans-serif" }}>
-            {"x"}
+
+          {/* Mobile menu button */}
+          <div className="md:hidden">
+            <button
+              onClick={() => setIsOpen(!isOpen)}
+              className="inline-flex items-center justify-center p-2 rounded-md text-gray-600 hover:text-[#f1a986] hover:bg-gray-50 transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-[#f1a986]"
+            >
+              {isOpen ? (
+                <X className="block h-6 w-6" />
+              ) : (
+                <Menu className="block h-6 w-6" />
+              )}
+            </button>
           </div>
-        </>
-        :
-        null
-      }
-    </div>
+        </div>
+      </div>
+
+      {/* Mobile Navigation */}
+      <div 
+        className={`md:hidden transition-all duration-300 ease-in-out ${
+          isOpen ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'
+        } overflow-hidden`}
+      >
+        <div className="px-4 py-3 space-y-2 bg-white shadow-lg">
+          {navLinks.map((link) => (
+            <Link
+              key={link.to}
+              to={link.to}
+              className="block px-3 py-2 rounded-md text-base font-medium text-gray-600 hover:text-[#f1a986] hover:bg-gray-50 transition-all duration-200"
+              onClick={() => setIsOpen(false)}
+            >
+              {link.label}
+            </Link>
+          ))}
+          <Link
+            to="/contact-us"
+            className="block w-full mt-4 bg-[#f1a986] text-white px-6 py-2 rounded-md text-sm font-medium hover:bg-[#e08b66] transition-all duration-200 text-center"
+            onClick={() => setIsOpen(false)}
+          >
+            Reserve Now
+          </Link>
+        </div>
+      </div>
+    </nav>
   );
 };
 

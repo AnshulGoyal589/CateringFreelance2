@@ -5,7 +5,7 @@ import Preview from "./Preview"
 const Header=(props)=>{
     return (
         <div className="header">
-            <Details/>
+            {/* <Details/> */}
             <Navbar/>
             <Preview page={props.page}/>
         </div>

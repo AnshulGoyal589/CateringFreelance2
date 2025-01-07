@@ -12,8 +12,8 @@ const App=()=>{
     const [pageData,setPageData]=useState("");
     return (
         <div className="max-w-screen overflow-x-hidden min-h-screen flex flex-col font-inter">
-        <Header2 className="w-full" page={pageData}/>
         <Router>
+        <Header2 className="w-full" page={pageData}/>
             <Routes>
                 <Route path="/" element={<Home setPreview={setPageData}/>} />
                 <Route path="/events" element={<EventHome setPreview={setPageData}/>}/>

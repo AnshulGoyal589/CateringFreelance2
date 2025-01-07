@@ -1,37 +1,39 @@
 import React, { useEffect, useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
+import { Navigation, Pagination, Autoplay } from "swiper/modules";
+import { useInView } from "react-intersection-observer";
+import { useNavigate } from "react-router";
+import AOS from "aos";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
-import { Navigation, Pagination } from "swiper/modules";
+import "aos/dist/aos.css";
+
+// Import your components
 import PriceOptions from "./PriceOptions";
 import CardComponent from "./CardComponent";
-import "../../index.css";
 import CateringService from "./CateringService";
 import Service from "./Service";
 import Testimonial from "./Testimonial";
 import CateringEvents from "./CateringEvents";
 import News from "./News";
-import AOS from "aos";
 import FilmList from "./AboutUs";
-import "aos/dist/aos.css";
-import { useInView } from "react-intersection-observer";
-import { useNavigate } from "react-router";
+
 const slideAnimations = `
-  @keyframes slideDown {
+  @keyframes fadeInScale {
     0% {
-      transform: translateY(-50px);
+      transform: scale(1.1) translateY(-20px);
       opacity: 0;
     }
     100% {
-      transform: translateY(0);
+      transform: scale(1) translateY(0);
       opacity: 1;
     }
   }
 
   @keyframes slideUp {
     0% {
-      transform: translateY(50px);
+      transform: translateY(30px);
       opacity: 0;
     }
     100% {
@@ -41,49 +43,53 @@ const slideAnimations = `
   }
 
   .animate-heading {
-    animation: slideDown 1.25s ease-out forwards;
+    animation: fadeInScale 1.5s cubic-bezier(0.4, 0, 0.2, 1) forwards;
     opacity: 0;
   }
 
   .animate-buttons {
-    animation: slideUp 1.25s ease-out forwards;
-    animation-delay: 0.3s;
+    animation: slideUp 1.5s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+    animation-delay: 0.5s;
     opacity: 0;
   }
 `;
 
 const Home = (props) => {
-  const navigate=useNavigate();
+  const navigate = useNavigate();
   const [animationKey, setAnimationKey] = useState(0);
-  useEffect(()=>{
+  
+  useEffect(() => {
     props.setPreview("n/a");
-},[])
+  }, []);
+
   const slidesData = [
     {
-      image:"https://res.cloudinary.com/daa3y840x/image/upload/v1734955032/fe792f76-ba07-4f55-a2c3-09b071045c4b_o6sb3k.jpg",
-      heading: "Elevating your events with custom catering experiences",
-      subheading: "Sign up to get started on your journey.",
-    },
-    {
-      image: "https://res.cloudinary.com/daa3y840x/image/upload/a_-90/v1734955202/93fbd8aa-5e06-4d71-9f03-ac6e163ff1a1_zmzkfx.jpg",
-      heading: "Premium catering services for your taste only",
-      subheading: "Discover amazing content here.",
+      image: "https://res.cloudinary.com/daa3y840x/image/upload/v1734955032/fe792f76-ba07-4f55-a2c3-09b071045c4b_o6sb3k.jpg",
+      heading: "Elevating Your Events With Custom Catering Experiences",
+      subheading: "Crafting Unforgettable Moments Through Culinary Excellence",
     },
     {
       image: "https://res.cloudinary.com/daa3y840x/image/upload/w_1000,ar_16:9,c_fill,g_auto,e_sharpen/v1734955025/cacfeb6d-209f-491b-9dc3-fd7863602f21_fm4f0s.jpg",
-      heading: "Savor the finest catering options, designed just for you",
-      subheading: "Innovative solutions for your needs.",
+      heading: "Savor The Finest Catering Options, Designed Just For You",
+      subheading: "Bespoke Dining Experiences For Distinguished Events",
+    },
+    {
+      image: "https://res.cloudinary.com/daa3y840x/image/upload/a_-90/v1734955202/93fbd8aa-5e06-4d71-9f03-ac6e163ff1a1_zmzkfx.jpg",
+      heading: "Premium Catering Services For Your Taste Only",
+      subheading: "Where Luxury Meets Culinary Artistry",
     },
   ];
 
   const { ref, inView } = useInView({
     triggerOnce: true,
-    threshold: 1,
+    threshold: 0.5,
   });
 
   useEffect(() => {
     AOS.init({
-      duration: 1000,
+      duration: 1200,
+      once: true,
+      easing: 'ease-out-cubic',
     });
   }, []);
 
@@ -94,97 +100,108 @@ const Home = (props) => {
   return (
     <div className="min-h-screen w-full bg-[#f5f4f0]">
       <style>{slideAnimations}</style>
+      
       <Swiper
-  className="w-full h-screen relative text-cyan-300"
-  loop={true}
-  navigation={{
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
-  }}
-  modules={[Navigation, Pagination]}
-  onSlideChange={handleSlideChange}
-  speed={1500} 
->
-  {slidesData.map((slide, index) => (
-    <SwiperSlide key={index}>
-      <div
-        className="h-screen w-full flex flex-col items-center justify-center text-white text-center"
-        style={{
-          backgroundImage: `url(${slide.image})`,
-          backgroundSize: "cover",
-          backgroundPosition: "center",
+        className="w-full h-screen relative"
+        loop={true}
+        navigation={{
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
         }}
+        pagination={{
+          clickable: true,
+          bulletActiveClass: 'swiper-pagination-bullet-active bg-[#f1a986]'
+        }}
+        autoplay={{
+          delay: 5000,
+          disableOnInteraction: false,
+        }}
+        modules={[Navigation, Pagination, Autoplay]}
+        onSlideChange={handleSlideChange}
+        speed={1500}
       >
-        {/* Backdrop Filter */}
-        <div className="absolute inset-0  bg-black bg-opacity-20"></div>
-
-        {/* Header Text */}
-        {/* <div className="absolute top-0 left-0 right-0 bg-opacity-30 py-4 hover:bg-white transition-all duration-200">
-          <CompSlide />
-        </div> */}
-
-        {/* Content Section */}
-        <div
-          ref={ref}
-          className="text-center z-50 bg-opacity-50 p-6 rounded-md text-white transition-all duration-200 flex flex-col items-center justify-between w-full md:w-2/3 lg:w-1/2 mx-auto"
-          key={animationKey}
-        >
-          <h2 className="animate-heading text-[2.5rem] font-bold mb-4 leading-tight sm:text-3xl md:text-4xl lg:text-5xl">
-            {slide.heading}
-          </h2>
-
-          <div className="animate-buttons flex mt-3 flex-col sm:flex-row gap-x-4 gap-y-4 sm:gap-y-0">
-            <button className="border px-5 py-3 text-xl transition-all duration-200 border-[#f1a986] font-semibold text-white bg-[#f1a986] hover:text-peach hover:bg-transparent rounded-md w-full sm:w-auto"
-            onClick={() => navigate("/about-us")}
+        {slidesData.map((slide, index) => (
+          <SwiperSlide key={index}>
+            <div
+              className="h-screen w-full flex flex-col items-center justify-center text-white text-center relative overflow-hidden"
+              style={{
+                backgroundImage: `url(${slide.image})`,
+                backgroundSize: "cover",
+                backgroundPosition: "center",
+              }}
             >
-              Read More
-            </button>
-            <button className="border px-5 py-3 text-xl transition-all duration-200 border-white font-semibold bg-white text-[#f1a986] hover:bg-transparent hover:text-white rounded-md w-full sm:w-auto"
-            onClick={() => navigate("/contact-us")}
-            >
-            Plan Your Catering 
-            </button>
-          </div>
-        </div>
-      </div>
-    </SwiperSlide>
-  ))}
-</Swiper>
+              {/* Gradient Overlay */}
+              <div className="absolute inset-0 bg-gradient-to-b from-black/30 via-black/20 to-black/40"></div>
 
+              {/* Content Section */}
+              <div
+                ref={ref}
+                className="relative z-10 px-4 sm:px-6 lg:px-8 max-w-4xl mx-auto"
+                key={animationKey}
+              >
+                <h2 className="animate-heading text-4xl sm:text-5xl lg:text-6xl font-serif font-bold mb-6 leading-tight">
+                  {slide.heading}
+                </h2>
+                <p className="animate-heading text-xl sm:text-2xl mb-8 text-gray-100">
+                  {slide.subheading}
+                </p>
 
-      <div className="swiper-button-next text-[#f1a986] hover:text-[#f1a986]"></div>
-      <div className="swiper-button-prev text-[#f1a986] hover:text-[#f1a986]"></div>
+                <div className="animate-buttons flex flex-col sm:flex-row justify-center items-center gap-4 sm:gap-6">
+                  <button
+                    onClick={() => navigate("/about-us")}
+                    className="px-8 py-3 text-lg font-medium bg-[#f1a986] text-white border-2 border-[#f1a986] hover:bg-transparent hover:text-white transition-all duration-300 rounded-md w-full sm:w-auto"
+                  >
+                    Discover More
+                  </button>
+                  <button
+                    onClick={() => navigate("/contact-us")}
+                    className="px-8 py-3 text-lg font-medium bg-white text-[#f1a986] border-2 border-white hover:bg-transparent hover:text-white transition-all duration-300 rounded-md w-full sm:w-auto"
+                  >
+                    Plan Your Event
+                  </button>
+                </div>
+              </div>
+            </div>
+          </SwiperSlide>
+        ))}
+      </Swiper>
 
-      {/* Other Components */}
-      <div className="px-10 -mt-28 bg-transparent">
+      {/* Navigation Arrows */}
+      <div className="swiper-button-next !text-white hover:text-[#f1a986] transition-colors duration-300"></div>
+      <div className="swiper-button-prev !text-white hover:text-[#f1a986] transition-colors duration-300"></div>
+
+      {/* Content Sections */}
+      <div className="relative z-20 px-4 sm:px-6 lg:px-8 -mt-28 bg-transparent">
         <CardComponent />
       </div>
 
-      <div className="min-h-[700px]">
+      <div className="min-h-[700px] bg-white">
         <CateringService />
       </div>
-      <div>
-        <FilmList/>
+
+      <div className="bg-[#f5f4f0]">
+        <FilmList />
       </div>
-      <div className="">
+
+      <div className="bg-white">
         <Service />
       </div>
 
-      <div>
+      <div className="bg-[#f5f4f0]">
         <PriceOptions />
       </div>
-      <div className="mt-9 bg-gray-100 py-10">
+
+      <div className="bg-gray-100 py-16">
         <Testimonial />
       </div>
 
-      <div className="">
+      <div className="bg-white">
         <CateringEvents />
       </div>
 
-      <div className="bg-[#f5f4f0] mt-5 py-6 px-4 sm:px-8 lg:px-16 xl:px-24">
+      <div className="bg-[#f5f4f0] py-16 px-4 sm:px-6 lg:px-8">
         <News />
       </div>
-
     </div>
   );
 };
