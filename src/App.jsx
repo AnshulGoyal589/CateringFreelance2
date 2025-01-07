@@ -1,8 +1,8 @@
 import {BrowserRouter as Router,Routes,Route} from "react-router-dom"
 import Home from "./pages/Home/index.jsx"
 import EventHome from "./pages/Events/index.jsx"
-import Header from "./components/header/index.jsx"
-import Footer from "./components/footer"
+import Header2 from "./components/Header/index.jsx"
+import Footer from "./components/Footer/index.jsx"
 import {useState} from "react"
 import './index.css'
 import AboutUs from "./pages/AboutUs"
@@ -12,7 +12,7 @@ const App=()=>{
     const [pageData,setPageData]=useState("");
     return (
         <div className="max-w-screen overflow-x-hidden min-h-screen flex flex-col font-inter">
-        <Header className="w-full" page={pageData}/>
+        <Header2 className="w-full" page={pageData}/>
         <Router>
             <Routes>
                 <Route path="/" element={<Home setPreview={setPageData}/>} />
