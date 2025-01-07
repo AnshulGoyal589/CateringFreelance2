@@ -60,6 +60,11 @@ const Home = (props) => {
 },[])
   const slidesData = [
     {
+      image:"https://res.cloudinary.com/daa3y840x/image/upload/v1734955032/fe792f76-ba07-4f55-a2c3-09b071045c4b_o6sb3k.jpg",
+      heading: "Elevating your events with custom catering experiences",
+      subheading: "Sign up to get started on your journey.",
+    },
+    {
       image: "https://res.cloudinary.com/daa3y840x/image/upload/a_-90/v1734955202/93fbd8aa-5e06-4d71-9f03-ac6e163ff1a1_zmzkfx.jpg",
       heading: "Premium catering services for your taste only",
       subheading: "Discover amazing content here.",
@@ -68,11 +73,6 @@ const Home = (props) => {
       image: "https://res.cloudinary.com/daa3y840x/image/upload/w_1000,ar_16:9,c_fill,g_auto,e_sharpen/v1734955025/cacfeb6d-209f-491b-9dc3-fd7863602f21_fm4f0s.jpg",
       heading: "Savor the finest catering options, designed just for you",
       subheading: "Innovative solutions for your needs.",
-    },
-    {
-      image:"https://res.cloudinary.com/daa3y840x/image/upload/v1734955032/fe792f76-ba07-4f55-a2c3-09b071045c4b_o6sb3k.jpg",
-      heading: "Elevating your events with custom catering experiences",
-      subheading: "Sign up to get started on your journey.",
     },
   ];
 
