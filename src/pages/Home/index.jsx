@@ -64,11 +64,11 @@ const Home = (props) => {
 
   const slidesData = [
     {
-      image:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSGIDMQlJ48PHfQ-VCJj1yZw8H8KuZrnAnfqA&s",
+      image:"https://img.freepik.com/premium-photo/lavish-buffet-dinner-feast-senses_204719-99279.jpg?w=1060",
       heading: "Elevating Your Events With Custom Catering Experiences",
       subheading: "Crafting Unforgettable Moments Through Culinary Excellence",
     },
-    {image:"https://img.freepik.com/premium-psd/top-view-table-laden-with-delicious-food-including-roasted-vegetables-salad-bread-meat_282218-47886.jpg?ga=GA1.1.1812414693.1722386078&semt=ais_hybrid",
+    {image:"https://img.freepik.com/premium-photo/contemporary-hotel-dining-area-featuring-sleek-buffet-setup-stylish-seating-arrangement_355018-11820.jpg?w=1060",
       heading: "Savor The Finest Catering Options, Designed Just For You",
       subheading: "Bespoke Dining Experiences For Distinguished Events",
     },
