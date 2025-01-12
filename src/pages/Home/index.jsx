@@ -64,7 +64,7 @@ const Home = (props) => {
 
   const slidesData = [
     {
-      image:"https://img.freepik.com/premium-photo/lavish-buffet-dinner-feast-senses_204719-99279.jpg?w=1060",
+      image:"https://img.freepik.com/premium-psd/abundant-buffet-table-with-various-dishes-including-pasta-seafood-salad-roasted-vegetables-bread_296091-32866.jpg?ga=GA1.1.1812414693.1722386078&semt=ais_hybrid",
       heading: "Elevating Your Events With Custom Catering Experiences",
       subheading: "Crafting Unforgettable Moments Through Culinary Excellence",
     },
