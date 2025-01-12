@@ -15,7 +15,7 @@ const Navbar = () => {
   ];
 
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 bg-white shadow-md">
+    <nav className="fixed top-0 left-0 right-0 z-50 bg-[#ecece2] shadow-md">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-20">
           {/* Logo and Brand */}
@@ -31,7 +31,7 @@ const Navbar = () => {
               <span className="text-xl font-serif font-bold text-gray-900 group-hover:text-[#f1a986] transition-colors duration-200">
                 Savoury Soirée
               </span>
-              <span className="text-sm font-serif text-gray-600">
+              <span className="text-sm font-serif text-black">
                 Catering & Events
               </span>
             </div>
@@ -43,7 +43,7 @@ const Navbar = () => {
               <Link
                 key={link.to}
                 to={link.to}
-                className="text-gray-600 hover:text-[#f1a986] px-3 py-2 text-sm font-medium transition-colors duration-200 relative after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-[#f1a986] after:transition-all after:duration-300 hover:after:w-full"
+                className="text-black hover:text-[#f1a986] px-3 py-2 text-sm font-medium transition-colors duration-200 relative after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-[#f1a986] after:transition-all after:duration-300 hover:after:w-full"
               >
                 {link.label}
               </Link>
