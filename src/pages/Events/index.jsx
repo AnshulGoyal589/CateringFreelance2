@@ -36,10 +36,11 @@ const EventHome = (props) => {
                         <h2>Corporate Events</h2>
                         <div className="description">
                             <p>
-                                qui dolorem ipsum quia dolor sit amet, consectetur,
-                                adipisci velit, sed quia non numquam eius modi
-                                tempora <span>incidunt ut labore et dolore magnam aliquam
-                                quaerat voluptatem. Ut enim ad minima veniam, quis</span>
+                             We provides tailored food and beverage services for professional gatherings, from conferences to team meetings, corporate parties.
+                             <span>
+                             The focus is on high-quality, 
+                            diverse menus that accommodate various preferences and ensure a seamless experience. 
+                            </span>
                             </p>
                         </div>
                         <button onClick={()=>(navigate("/corporate-event"))}>View More</button>
@@ -54,8 +55,8 @@ const EventHome = (props) => {
                     <div className="circle">
                         <h2>Social Gatherings</h2>
                         <p>
-                            qui dolorem ipsum quia dolor sit amet, consectetur,
-                            adipisci velit, sed quia non numquam
+                            We offer customized catering for social gatherings, creating delicious,
+                             shareable menus that foster connection and celebration.
                         </p>
                         <button onClick={()=>(navigate("/social-event"))}>View More</button>
                     </div>
@@ -71,8 +72,8 @@ const EventHome = (props) => {
                     </div>
                     <div className="title">
                         <p>
-                            qui dolorem ipsum liquam quaerat voluptatem. Ut enim
-                            ad minima veniam, quis
+                        We specialize in catering for international events, offering diverse, 
+                        authentic menus that cater to global tastes.
                         </p>
                         <button onClick={()=>(navigate("/international-event"))}>View More</button>
                     </div>
@@ -86,9 +87,9 @@ const EventHome = (props) => {
                     <div className="simple">
                         <h2>Engagement Ceremonies</h2>
                         <p>
-                            qui dolorem adipisci velit, sed quia non numquam eius
-                            modi temp dolorem ipsum quia dolor sit amet, dolorem
-                            ipsum quia dolor sit amet,
+                           
+                            We craft memorable catering experiences for engagement ceremonies, 
+                            featuring elegant menus that reflect the joy and significance of the day
                         </p>
                         <button onClick={()=>(navigate("/social-event"))}>View More</button>
                     </div>
@@ -104,9 +105,8 @@ const EventHome = (props) => {
                     </div>
                     <div className="color-line"></div>
                     <div className="description">
-                        qui dolorem adipisci velit, sed quia non numquam eius
-                        modi temp dolorem ipsum quia dolor sit amet, dolorem
-                        ipsum quia dolor sit
+                    We create delightful catering experiences for birthdays,
+                     with fun, flavorful menus that make every celebration unforgettable.
                     </div>
                 </div>
 
@@ -116,15 +116,14 @@ const EventHome = (props) => {
                     data-aos="fade-up"
                 >
                     <p>
-                        qui dolorem ipsum quia dolor sit amet, consectetur,
-                        adipisci velit, sed quia non numquam eius modi tempora{" "}
-                        <span>
-                            incidun ci velit, sed quia non numquam eius modi
-                            tempora in qui dolorem ipsum quia dolor sit amet,
-                            consectetur, adipisci velit, sed quia non numquam
-                            eius modi tempora incidun
-                        </span>
+                    We specialize in creating unforgettable wedding catering experiences, 
+                    offering bespoke menus that reflect the couple&apos;s unique style. 
+                    <span>From elegant hors 
+                    d&apos;oeuvres to grand receptions,
+                     our team ensures every detail is perfect, making your special day truly extraordinary.
+                    </span>    
                     </p>
+                    <button onClick={()=>(navigate("/wedding"))} style={{color:"white",textShadow:"0px 0px 10px black",width:"100%",textAlign:"center"}}>View More</button>
                     <h1>Weddings</h1>
                 </div>
             </div>
@@ -138,9 +137,7 @@ const EventHome = (props) => {
                     <div className="inner-content">
                         <h2>Event Domains</h2>
                         <p>
-                            qui dolorem ipsum quia dolor sit amet, consectetur,
-                            adipisci velit, sed quia non numquam eius modi tempora
-                            incidun
+                        We diversify across various event domains, offering tailored catering services for corporate functions, weddings, parties, and more.
                         </p>
                     </div>
                 </div>
@@ -150,13 +147,15 @@ const EventHome = (props) => {
                     data-aos="fade-up"
                 >
                     <p>
-                        qui dolorem ipsum quia dolor sit amet, consectetur,
-                        adipisci velit, sed quia non numquam eius modi tempora
-                        incidun ci velit, sed quia non numquam eius modi tempora
-                        in qui dolorem ipsum quia dolor sit amet, consectetur
-                        cidun
+                    We specialize in creating unforgettable wedding catering experiences, 
+                    offering bespoke menus that reflect the couple&apos;s unique style. 
+                    <span>From elegant hors 
+                    d&apos;oeuvres to grand receptions,
+                     our team ensures every detail is perfect, making your special day truly extraordinary.
+                    </span>    
                     </p>
                     <h1>Weddings</h1>
+                    <button onClick={()=>(navigate("/wedding"))} style={{color:"white",textShadow:"0px 0px 10px black"}}>View More</button>
                 </div>
             </div>
         </div>

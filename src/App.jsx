@@ -22,6 +22,7 @@ const App=()=>{
                 <Route path="/corporate-event" element={<EventMenu setPreview={setPageData} eventType="Corporate Events"/>}/>
                 <Route path="/social-event" element={<EventMenu setPreview={setPageData} eventType="Social Events"/>}/>
                 <Route path="/international-event" element={<EventMenu setPreview={setPageData} eventType="International Events"/>}/>
+                <Route path="/wedding" element={<EventMenu setPreview={setPageData} eventType="Wedding Events"/>}/>
             </Routes>
         </Router>
         <div>
