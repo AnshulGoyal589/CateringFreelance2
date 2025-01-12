@@ -29,6 +29,9 @@
     /* box-shadow:0px 0px 50px grey; */
 
 }
+.quick-links:hover{
+    animation:expand 0.3s forwards;
+}
 .quick-links .inner-content{
     box-shadow:0px 0px 60px black;
     border-radius:6px;
@@ -94,7 +97,7 @@
 }
 .event-list>div:hover{
     animation:expand 0.3s forwards;
-    cursor: pointer;
+    /* cursor: pointer; */
 }
 .event-list .corporate-event{
     grid-column:span 3;
@@ -470,7 +473,7 @@
         margin-left:0;
     }
 } */
-@media (max-width:600px){
+@media (max-width:800px){
     *{
         font-size: small;
     }
