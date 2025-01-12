@@ -47,7 +47,7 @@ const Service = () => {
   }, []);
 
   return (
-    <div className="flex flex-col pt-8 pb-10 bg-white">
+    <div className="flex flex-col pt-8 pb-10 bg-[#ecece2]">
       <div className="text-center mb-8 px-4">
         <h1 className="text-black text-[40px]">Catering Services</h1>
         <p className="text-black text-xl">

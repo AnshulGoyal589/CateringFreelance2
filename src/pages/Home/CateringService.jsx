@@ -3,7 +3,7 @@ import MenuData from './MenuData';
 
 const CateringService = () => {
   return (
-    <div className='mt-4 relative mb-16 lg:mb-7'>
+    <div className='mt-4 relative bg-[#ecece2] mb-16 lg:mb-7'>
       <div>
         <div
           style={{

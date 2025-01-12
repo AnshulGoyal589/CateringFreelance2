@@ -65,9 +65,9 @@ const MeetOurTeam = () => {
   ];
 
   return (
-    <div className="w-full">
+    <div className="w-full bg-[#ecece2]">
       {/* First Section */}
-      <section className="w-full bg-[#f7f7f7]  py-12 px-4 sm:px-6 lg:px-8">
+      <section className="w-full bg-[#ecece2]  py-12 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto">
           <div className="flex flex-col lg:flex-row lg:items-start gap-12">
             {/* Left Content */}
@@ -77,10 +77,12 @@ const MeetOurTeam = () => {
                   Meet Our Team
                 </h1>
                 <p className="text-gray-600 mb-6 text-xl">
-                  <span className="font-bold">Contact us</span> today to discover a world where every bite tells a story and every moment is a masterpiece. 
-                  <br></br>
-                  We are a passionate group of culinary experts dedicated to making your events memorable through extraordinary catering services.
-                </p>
+  <span className="font-bold">Contact us</span> today to discover a world where every bite tells a story and every moment is a masterpiece. 
+  <br />
+  We are a passionate group of culinary experts dedicated to making your events memorable through extraordinary catering services.
+
+</p>
+
 
                 <button className="px-6 py-3 border border-peach bg-[#f1a986] text-white rounded-md hover:bg-white hover:text-[#f1a986] transition-colors duration-300"
                 onClick={()=>navigateAndScroll("/contact-us")}
@@ -141,10 +143,15 @@ const MeetOurTeam = () => {
                 What people like most about us
               </h2>
               <p className="text-gray-600 text-xl">
-              We take pride in our dedication to quality, creativity, and exceptional service, ensuring your catering needs are met with excellence.
-              <br></br>
-              Allow us to honour of elevating your next celebration to a realm of timeless sophistication.
-              </p>
+  We take pride in our dedication to quality, creativity, and exceptional service, ensuring your catering needs are met with excellence.  
+  <br></br>
+  <br></br>
+  From hosting grand celebrations to crafting culinary masterpieces for Bollywood movies, our expertise knows no bounds.  
+  <br></br>
+  <br></br>
+  Allow us the honour of elevating your next celebration to a realm of timeless sophistication.  
+</p>
+
               <button className="px-6 py-3 bg-[#f1a986] text-white rounded-md hover:bg-white hover:text-[#f1a986] transition-colors duration-300 border border-[#f1a986]"
               onClick={()=>navigateAndScroll("/events")}
               >

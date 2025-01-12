@@ -97,7 +97,7 @@ const Home = (props) => {
   };
 
   return (
-    <div className="min-h-screen w-full bg-[#f5f4f0]">
+    <div className="min-h-screen w-full bg-[#ecece2]">
       <style>{slideAnimations}</style>
       
       <Swiper
@@ -178,11 +178,11 @@ const Home = (props) => {
         <CateringService />
       </div> */}
 
-      <div className="bg-[#f5f4f0]">
+      <div className="bg-[#ecece2]">
         <FilmList />
       </div>
 
-      <div className="bg-white">
+      <div className="bg-[#ecece2]">
         <Service />
       </div>
 
@@ -194,11 +194,11 @@ const Home = (props) => {
         <Testimonial />
       </div> */}
 
-      <div className="bg-white">
+      <div className="bg-[#ecece2]">
         <CateringEvents />
       </div>
 
-      <div className="bg-[#f5f4f0] py-16 px-4 sm:px-6 lg:px-8">
+      <div className="bg-[#ecece2] py-16 px-4 sm:px-6 lg:px-8">
         <News />
       </div>
     </div>

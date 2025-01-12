@@ -24,14 +24,14 @@ const Band = () => {
   }, []);
 
   return (
-    <div className='w-full' ref={bandRef}>
+    <div className='w-full bg-[#ecece2]' ref={bandRef} >
       <div className="flex flex-wrap justify-between gap-8 p-8 w-[100vw] box-border">
         <div className="text-center p-4 flex-1 min-w-[200px] flex-shrink-0">
           {isVisible && (
             <CountUp start={0} end={20} duration={3} suffix="+" className="text-3xl font-semibold text-[#f1a986]" />
           )}
           <br />
-          <span className="text-lg text-gray-500">SKILLED TECHNICIANS</span>
+          <span className="text-lg text-gray-500">SKILLED CHEFS</span>
         </div>
 
         <div className="text-center p-4 flex-1 min-w-[200px] flex-shrink-0">

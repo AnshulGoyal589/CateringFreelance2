@@ -43,12 +43,12 @@ const Index = (props) => {
   };
 
   return (
-    <div className="bg-white min-h-screen">
+    <div className="bg-[#ecece2] min-h-screen">
       <div className="max-w-7xl mx-auto px-4 py-16 sm:px-6 lg:px-8">
         <div className="max-w-lg mx-auto md:max-w-none md:grid md:grid-cols-2 md:gap-16">
           
           <div className="relative">
-            <div className="bg-white shadow-lg rounded-2xl p-8">
+            <div className="bg-[#fcfcfa] shadow-lg rounded-2xl p-8">
               <h2 className="text-3xl font-bold text-gray-900 mb-8">Get in Touch</h2>
               
               <div className="space-y-8">
@@ -100,7 +100,7 @@ const Index = (props) => {
           </div>
 
           <div className="mt-12 sm:mt-16 md:mt-0">
-            <div className="bg-white shadow-lg rounded-2xl p-8">
+            <div className="bg-[#fcfcfa] shadow-lg rounded-2xl p-8">
               <h2 className="text-3xl font-bold text-gray-900 mb-8">Send us a Message</h2>
               
               <form onSubmit={handleSubmit(onSubmit)} className="space-y-6">

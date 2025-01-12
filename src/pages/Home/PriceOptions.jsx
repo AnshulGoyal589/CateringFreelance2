@@ -43,7 +43,7 @@ const PriceOptions = () => {
   }, []);
 
   return (
-    <div className="w-full font-semibold flex flex-col p-10 items-center">
+    <div className="w-full bg-[#ecece2] font-semibold flex flex-col p-10 items-center">
       <div className="flex flex-col gap-3 mb-8 text-center">
         <h1 className="text-[2.5rem] text-richblack-800">Price Options</h1>
         <p className="text-2xl text-richblack-100 leading-7 gap-y-2">

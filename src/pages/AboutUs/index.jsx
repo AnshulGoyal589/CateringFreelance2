@@ -10,20 +10,20 @@ const index = (props) => {
     props.setPreview("About Us");
 },[])
   return (
-    <div>
+    <div className='bg-[#ecece2]'>
       <section>
         <WhatWeDo/>
       </section>
-      <section className='w-[100vw]'>
+      <section className='w-[100vw] bg-[#ecece2]'>
         <Band/>
       </section>
-      <section className='lg:min-h-fit'>
+      <section className='lg:min-h-fit bg-[#ecece2]'>
         <Video/>
       </section>
-      <section className="py-10 sm:py-12 lg:py-16 bg-white">
+      <section className="py-10 sm:py-12 lg:py-16 bg-[#ecece2]">
         <MeetOurTeam />
       </section>
-      <section className='min-w-full'>
+      <section className='min-w-full bg-[#ecece2]'>
         <Features/>
       </section>
 
@@ -31,5 +31,4 @@ const index = (props) => {
     </div>
   )
 }
-
 export default index

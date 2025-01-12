@@ -26,7 +26,7 @@ const CateringEvents = () => {
   ];
 
   return (
-    <div className="py-10 bg-white overflow-x-hidden">
+    <div className="py-10 bg-[#ecece2] overflow-x-hidden">
       <div className="text-center mb-10">
         <h1 className="text-4xl font-semibold text-gray-800 mb-4">
           Catering Events

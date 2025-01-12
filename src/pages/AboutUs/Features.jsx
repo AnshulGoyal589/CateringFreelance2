@@ -47,7 +47,7 @@ const Features = () => {
   }, []);
 
   return (
-    <div className="flex lg:min-h-[300px] flex-col mt-4 py-20 bg-[#f7f7f7]">
+    <div className="flex lg:min-h-[300px] flex-col mt-4 py-20 bg-[#ecece2]">
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 px-4">
         {servicesInfo.map((service, index) => (
           <div

@@ -3,7 +3,7 @@ import { FaLocationArrow, FaPhone, FaEnvelope } from 'react-icons/fa';
 
 const FindUs = () => {
   return (
-    <div className='flex flex-row'>
+    <div className='flex flex-row bg-[#ecece2]'>
       <div className="flex w-full md:w-[40%] py-16 gap-6 flex-col bg-peach justify-between bg-orange-200 p-6">
         <div className="flex font-light flex-col space-y-4 w-full gap-3">
           <h2 className="text-2xl font-bold text-white">HOW TO FIND US</h2>

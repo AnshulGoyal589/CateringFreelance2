@@ -69,7 +69,7 @@ const News = () => {
   const secondSet = data.slice(2);
 
   return (
-    <div className="bg-[#f5f4f0] mt-5 py-6 px-4 sm:px-8 lg:px-12">
+    <div className="bg-[#ecece2] mt-5 py-6 px-4 sm:px-8 lg:px-12">
       <div className="flex flex-col items-center text-center mb-8">
         <h1 className="text-2xl overflow-clip md:text-3xl font-semibold text-richblack-800 mb-2">
           Latest News

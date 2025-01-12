@@ -45,17 +45,20 @@ const Video = () => {
   };
 
   return (
-    <section className="w-full bg-gray-50 py-16 px-4 sm:px-6 lg:px-8">
+    <section className="w-full bg-[#ecece2] bg-gray-50 py-16 px-4 sm:px-6 lg:px-8">
       <div className="max-w-7xl mx-auto">
         <div className="flex flex-col lg:flex-row lg:items-center gap-12">
           <div className="w-full lg:w-1/2 space-y-6" data-aos="fade-up">
             <h1 className="text-3xl font-semibold text-gray-800 leading-tight">
               Our goal is to provide a superior customer experience
             </h1>
-            <p className=" text-gray-600 leading-relaxed text-xl">
-              We strive to deliver exceptional service by understanding customer needs, ensuring satisfaction,
-              and continuously improving our offerings to exceed expectations.
-            </p>
+            <p className="text-gray-600 leading-relaxed text-xl">
+  We strive to deliver exceptional service by understanding customer needs, ensuring satisfaction, 
+  and continuously improving our offerings to exceed expectations. 
+  <br /><br />
+  Our expertise has been trusted by esteemed clients, including the Government of India, for whom we have proudly organized catering for high-profile events and official gatherings.
+</p>
+
             <button className="px-6 py-3 bg-[#f1a986] text-white rounded-md hover:bg-white 
               hover:text-[#f1a986] transition-colors duration-300 border border-[#f1a986]"
               onClick={()=>navigateAndScroll("/events")}
