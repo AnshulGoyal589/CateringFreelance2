@@ -64,17 +64,16 @@ const Home = (props) => {
 
   const slidesData = [
     {
-      image: "https://res.cloudinary.com/daa3y840x/image/upload/v1734955032/fe792f76-ba07-4f55-a2c3-09b071045c4b_o6sb3k.jpg",
+      image:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSGIDMQlJ48PHfQ-VCJj1yZw8H8KuZrnAnfqA&s",
       heading: "Elevating Your Events With Custom Catering Experiences",
       subheading: "Crafting Unforgettable Moments Through Culinary Excellence",
     },
-    {
-      image: "https://res.cloudinary.com/daa3y840x/image/upload/w_1000,ar_16:9,c_fill,g_auto,e_sharpen/v1734955025/cacfeb6d-209f-491b-9dc3-fd7863602f21_fm4f0s.jpg",
+    {image:"https://img.freepik.com/premium-psd/top-view-table-laden-with-delicious-food-including-roasted-vegetables-salad-bread-meat_282218-47886.jpg?ga=GA1.1.1812414693.1722386078&semt=ais_hybrid",
       heading: "Savor The Finest Catering Options, Designed Just For You",
       subheading: "Bespoke Dining Experiences For Distinguished Events",
     },
     {
-      image: "https://cdn.pixabay.com/photo/2019/01/26/02/09/buffet-3955616_640.jpg",
+      image:"https://img.freepik.com/premium-photo/festive-iftar-gathering-soft-lantern-lights-with-delicious-appetizers-drinks_1160244-4718.jpg?w=1060",
       heading: "Premium Catering Services For Your Taste Only",
       subheading: "Where Luxury Meets Culinary Artistry",
     },

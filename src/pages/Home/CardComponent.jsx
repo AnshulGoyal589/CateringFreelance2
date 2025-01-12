@@ -39,14 +39,14 @@ const CardComponent = () => {
       subheading: 'Our seasoned team of professionals is committed to delivering seamless hospitality, leaving you free to savor each moment.'
     },
     {
-      image: "https://res.cloudinary.com/daa3y840x/image/upload/c_fill,w_1280,h_960/v1734955169/27f24880-cc5a-46ab-9b40-5d8fe12146b2_oho24q.jpg",
+      image: "https://www.keydesign-themes.com/etalon/catering/wp-content/uploads/sites/19/2017/06/2.jpg",
       heading: 'Tailored Culinary Experiences',
       subheading: 'Bespoke menus designed to complement your tastes, themes, and dietary preferences.'
     }
   ];
 
   return (
-    <div className="relative w-full bg-white px-4 sm:px-8 md:px-12 lg:px-16 py-16">
+    <div className="relative w-full bg-transparent px-4 sm:px-8 md:px-12 lg:px-16 py-16">
       <div className="max-w-7xl mx-auto">
         <Swiper
           onSwiper={(swiper) => (swiperRef.current = swiper)}

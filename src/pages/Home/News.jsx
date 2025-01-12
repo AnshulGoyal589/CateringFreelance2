@@ -22,27 +22,27 @@ const useNavigateAndScroll = () => {
 const News = () => {
   const data = [
     {
-      image: "https://res.cloudinary.com/daa3y840x/image/upload/v1734955040/3ec390db-ec7f-4ded-ab46-47be424715b8_bz9uak.jpg",
+      image: "https://www.keydesign-themes.com/etalon/catering/wp-content/uploads/sites/19/2017/06/blog6.jpg",
       heading: 'National Hydroelectric Power Corporation',
-      date: '2004-05-06',
+      date: '2021-05-06',
       text: 'The landscape divides into segments of bright land, a symbol of how even in divided times, light finds its way in the dark.',
     },
     {
       image: "https://res.cloudinary.com/daa3y840x/image/upload/a_-90/v1734955228/2a5defad-016a-4ed0-adde-666cf5a09751_fyql2l.jpg",
       heading: 'Border Road Organisation',
-      date: '2004-01-17',
+      date: '2024-01-17',
       text: 'The air seems to change with the seasons, a constant reminder of the forces that shape our world beyond our control.',
     },
     {
-      image: "https://res.cloudinary.com/daa3y840x/image/upload/v1734955032/fe792f76-ba07-4f55-a2c3-09b071045c4b_o6sb3k.jpg",
+      image: "https://www.keydesign-themes.com/etalon/catering/wp-content/uploads/sites/19/2017/06/blog5.jpg",
       heading: 'Central Water Commission',
-      date: '2004-05-28',
+      date: '2023-05-28',
       text: 'In the month of May, signs appear more clearly as the warmth of spring helps things grow and evolve, just as new beginnings often do.',
     },
     {
-      image: "https://res.cloudinary.com/daa3y840x/image/upload/v1734955165/93bb8b09-bc18-488a-9e65-07bc18d1e71d_lt33dr.jpg",
+      image: "https://www.keydesign-themes.com/etalon/catering/wp-content/uploads/sites/19/2017/06/blog4.jpg",
       heading: 'National Thermal Power Corporation',
-      date: '2004-09-17',
+      date: '2022-09-17',
       text: 'As the grass sways, a greater openness emerges, inviting us to explore and discover the richness hidden within the natural world.',
     },
     // {
