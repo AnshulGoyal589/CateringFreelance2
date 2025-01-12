@@ -74,7 +74,7 @@ const Home = (props) => {
       subheading: "Bespoke Dining Experiences For Distinguished Events",
     },
     {
-      image: "https://res.cloudinary.com/daa3y840x/image/upload/a_-90/v1734955202/93fbd8aa-5e06-4d71-9f03-ac6e163ff1a1_zmzkfx.jpg",
+      image: "https://cdn.pixabay.com/photo/2019/01/26/02/09/buffet-3955616_640.jpg",
       heading: "Premium Catering Services For Your Taste Only",
       subheading: "Where Luxury Meets Culinary Artistry",
     },
@@ -175,9 +175,9 @@ const Home = (props) => {
         <CardComponent />
       </div>
 
-      <div className="min-h-[700px] bg-white">
+      {/* <div className="min-h-[700px] bg-white">
         <CateringService />
-      </div>
+      </div> */}
 
       <div className="bg-[#f5f4f0]">
         <FilmList />
@@ -187,13 +187,13 @@ const Home = (props) => {
         <Service />
       </div>
 
-      <div className="bg-[#f5f4f0]">
+      {/* <div className="bg-[#f5f4f0]">
         <PriceOptions />
-      </div>
+      </div> */}
 
-      <div className="bg-gray-100 py-16">
+      {/* <div className="bg-gray-100 py-16">
         <Testimonial />
-      </div>
+      </div> */}
 
       <div className="bg-white">
         <CateringEvents />
