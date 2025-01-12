@@ -32,7 +32,7 @@ const Navbar = () => {
                 Savoury Soirée
               </span>
               <span className="text-sm font-serif text-gray-600">
-                Fine Dining & Events
+                Catering & Events
               </span>
             </div>
           </Link>
