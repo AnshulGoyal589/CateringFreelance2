@@ -11,7 +11,7 @@ const Details=()=>{
             <div className="contact-details">
                 <div>
                     <img src={LocationIcon}/>
-                    <text>12/1 Shahjahan Rd, Delhi</text>
+                    <text>211, Second Floor, Ashirwad Complex, Block D, Green Park, New Delhi 110016</text>
                 </div>
                 <div>
                     <img src={PhoneIcon}/>
@@ -19,7 +19,7 @@ const Details=()=>{
                 </div>
                 <div>
                     <img src={MailIcon}/>
-                    <text>contact@gmail.com</text>
+                    <text>caterers@savourysoiree.com</text>
                 </div>
             </div>
             <div className="links">

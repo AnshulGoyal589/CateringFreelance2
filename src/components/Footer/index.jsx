@@ -35,7 +35,7 @@ const Footer=()=>{
                 <h1>Contact Us:</h1>
                 <ul>
                     <li><img src={CallIcon}/>+91-9816054322   +91-9220444322</li>
-                    <li><img src={FooterMail}/>contact@gmail.com</li>
+                    <li><img src={FooterMail}/>caterers@savourysoiree.com</li>
                     <li><img src={FooterLocation}/>
                     211, Second Floor, Ashirwad Complex,
                     <br></br>
