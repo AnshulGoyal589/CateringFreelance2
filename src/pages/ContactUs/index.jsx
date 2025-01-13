@@ -62,8 +62,8 @@ const Index = (props) => {
                   </div>
                   <div>
                     <p className="text-gray-900 font-medium">Phone</p>
-                    <p className="text-gray-600 mt-1">(222) 400-630</p>
-                    <p className="text-gray-600">(222) 411-631</p>
+                    <p className="text-gray-600 mt-1">+91 98160 54322</p>
+                    <p className="text-gray-600">+91 92204 44322</p>
                   </div>
                 </div>
 
@@ -92,7 +92,11 @@ const Index = (props) => {
                   </div>
                   <div>
                     <p className="text-gray-900 font-medium">Location</p>
-                    <p className="text-gray-600 mt-1">49 Grand Street, Los Angeles, California, USA</p>
+                    <p className="text-gray-600 mt-1">211, Second Floor, Ashirwad Complex,
+                    <br></br>
+                     Block D, 
+                     Green Park, New Delhi-110016
+                    </p>
                   </div>
                 </div>
               </div>
