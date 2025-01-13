@@ -77,7 +77,7 @@ const Index = (props) => {
                   </div>
                   <div>
                     <p className="text-gray-900 font-medium">Email</p>
-                    <p className="text-gray-600 mt-1">contact@example.com</p>
+                    <p className="text-gray-600 mt-1">caterers@savourysoiree.com</p>
                   </div>
                 </div>
 

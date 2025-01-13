@@ -20,9 +20,9 @@ const index = (props) => {
       <section className='lg:min-h-fit bg-[#ecece2]'>
         <Video/>
       </section>
-      <section className="py-10 sm:py-12 lg:py-16 bg-[#ecece2]">
+      {/* <section className="py-10 sm:py-12 lg:py-16 bg-[#ecece2]">
         <MeetOurTeam />
-      </section>
+      </section> */}
       <section className='min-w-full bg-[#ecece2]'>
         <Features/>
       </section>
