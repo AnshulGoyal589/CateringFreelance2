@@ -44,7 +44,7 @@ const Footer=()=>{
                     </li>
                 </ul>
                 <div class="map"> 
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3574.6171383154783!2d77.09415439771416!3d28.505636631841185!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d1938456789c7%3A0x45a757aa37e73026!2sAMBIENCE%20MALL%2C%20GURUGRAM!5e0!3m2!1sen!2sin!4v1734629259691!5m2!1sen!2sin" allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3504.416428373381!2d77.20275881098001!3d28.55725547560459!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce27271e41fd5%3A0x5d17364095cb7b52!2sAshirwad%20Complex%2C%20Block%20D%2C%20Green%20Park%2C%20New%20Delhi%2C%20Delhi%20110016!5e0!3m2!1sen!2sin!4v1736760711437!5m2!1sen!2sin" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
             </div>
         </footer>
