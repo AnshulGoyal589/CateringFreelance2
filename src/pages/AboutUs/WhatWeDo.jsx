@@ -39,7 +39,7 @@ const WhatWeDo = () => {
         </h1>
         <div className="space-y-4">
           <p className="text-base lg:text-xl text-gray-700 space-y-4">
-            Welcome to <span className="italic text-[#8B4513] text-lg lg:text-2xl">The Savoury Soiree</span>, 
+            Welcome to <p className="italic inline-block text-[#8B4513] text-lg lg:text-2xl">The Savoury Soiree</p>, 
             where culinary artistry meets sophisticated elegance. We are purveyors of exceptional catering, 
             dedicated to transforming your celebrations into unforgettable experiences.
           </p>
