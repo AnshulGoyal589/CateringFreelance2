@@ -198,6 +198,26 @@ const Home = (props) => {
         <CateringEvents />
       </div>
 
+      <div className="menu-container">
+      <div 
+        style={{
+            marginBottom:"-5%", overflow:"hidden",
+            display:"flex", alignItems:"center",justifyContent:"center",height:"250px",width:"100%",backgroundImage:"url('MenuTextBorder.png')", backgroundSize:"100%"}}>
+           <p className="gold-lustrous-text">
+           <p style={{fontFamily:"roboto"}}>{
+            `Our global reach and unwavering dedication to excellence ensure a seamless and memorable\n dining experience for every occasion, no matter the location.
+The Savoury Soiree is proud to cater for prestigious international events, including:`
+          }</p>
+        <pre style={{fontFamily:"roboto",display:"flex",justifyContent:"center",paddingLeft:"0"}} >
+          {("-JSW PAINTS corporate catering at Hyatt Regency,\n Sydney, Australia| - ASIAN PAINTS coporate catering in Bali, Indonesia| -JSW PAINTS corporate catering in Budapest, Hungary.".split("|")).map((e)=>{
+            return (
+                <>{e}<br/></>
+            )
+        })}</pre>
+           </p>
+        </div>
+      </div>
+      
       <div className="bg-[#ecece2] py-16 px-4 sm:px-6 lg:px-8">
         <News />
       </div>
