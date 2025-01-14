@@ -14,9 +14,9 @@ const index = (props) => {
       <section>
         <WhatWeDo/>
       </section>
-      <section className='w-[100vw] bg-[#ecece2]'>
+      {/* <section className='w-[100vw] bg-[#ecece2]'>
         <Band/>
-      </section>
+      </section> */}
       <section className='lg:min-h-fit bg-[#ecece2]'>
         <Video/>
       </section>
