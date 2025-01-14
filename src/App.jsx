@@ -23,6 +23,8 @@ const App=()=>{
                 <Route path="/social-event" element={<EventMenu setPreview={setPageData} eventType="Social Events"/>}/>
                 <Route path="/international-event" element={<EventMenu setPreview={setPageData} eventType="International Events"/>}/>
                 <Route path="/wedding" element={<EventMenu setPreview={setPageData} eventType="Wedding Events"/>}/>
+                <Route path="/engagement" element={<EventMenu setPreview={setPageData} eventType="Engagement Events"/>}/>
+                <Route path="/birthday" element={<EventMenu setPreview={setPageData} eventType="Birthday Events"/>}/>
             </Routes>
         </Router>
         <div>

@@ -140,11 +140,12 @@
     background-image: linear-gradient(
      to right,
      #462523 0,
-            #cb9b51 22%, 
-     #f6e27a 45%,
-     #f6f2c0 50%,
-     #f6e27a 55%,
-     #cb9b51 78%,
+            #cb9b51 31%, 
+
+     #f6e27a 60%,
+     #f7f3b1 65%,
+     #f5dc5f 70%,
+     #cb9b51 75%,
      #462523 100%
      );
     color:transparent;

@@ -91,7 +91,7 @@ const EventHome = (props) => {
                             We craft memorable catering experiences for engagement ceremonies, 
                             featuring elegant menus that reflect the joy and significance of the day
                         </p>
-                        <button onClick={()=>(navigate("/social-event"))}>View More</button>
+                        <button onClick={()=>(navigate("/engagement"))}>View More</button>
                     </div>
                 </div>
 
@@ -101,7 +101,7 @@ const EventHome = (props) => {
                     </div>
                     <div className="title">
                         <h2>Birthdays</h2>
-                        <button onClick={()=>(navigate("/corporate-event"))}>View More</button>
+                        <button onClick={()=>(navigate("/birthday"))}>View More</button>
                     </div>
                     <div className="color-line"></div>
                     <div className="description">
