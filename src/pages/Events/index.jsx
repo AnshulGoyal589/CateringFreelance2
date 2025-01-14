@@ -43,7 +43,7 @@ const EventHome = (props) => {
                             </span>
                             </p>
                         </div>
-                        <button onClick={()=>(navigate("/corporate-event"))}>View More</button>
+                        {/* <button onClick={()=>(navigate("/corporate-event"))}>View More</button> */}
                     </div>
                 </div>
 
@@ -58,7 +58,7 @@ const EventHome = (props) => {
                             We offer customized catering for social gatherings, creating delicious,
                              shareable menus that foster connection and celebration.
                         </p>
-                        <button onClick={()=>(navigate("/social-event"))}>View More</button>
+                        {/* <button onClick={()=>(navigate("/social-event"))}>View More</button> */}
                     </div>
                 </div>
 
@@ -75,7 +75,7 @@ const EventHome = (props) => {
                         We specialize in catering for international events, offering diverse, 
                         authentic menus that cater to global tastes.
                         </p>
-                        <button onClick={()=>(navigate("/international-event"))}>View More</button>
+                        {/* <button onClick={()=>(navigate("/international-event"))}>View More</button> */}
                     </div>
                 </div>
 
@@ -91,7 +91,7 @@ const EventHome = (props) => {
                             We craft memorable catering experiences for engagement ceremonies, 
                             featuring elegant menus that reflect the joy and significance of the day
                         </p>
-                        <button onClick={()=>(navigate("/engagement"))}>View More</button>
+                        {/* <button onClick={()=>(navigate("/engagement"))}>View More</button> */}
                     </div>
                 </div>
 
@@ -101,7 +101,7 @@ const EventHome = (props) => {
                     </div>
                     <div className="title">
                         <h2>Birthdays</h2>
-                        <button onClick={()=>(navigate("/birthday"))}>View More</button>
+                        {/* <button onClick={()=>(navigate("/birthday"))}>View More</button> */}
                     </div>
                     <div className="color-line"></div>
                     <div className="description">
@@ -123,7 +123,7 @@ const EventHome = (props) => {
                      our team ensures every detail is perfect, making your special day truly extraordinary.
                     </span>    
                     </p>
-                    <button onClick={()=>(navigate("/wedding"))} style={{color:"white",textShadow:"0px 0px 10px black",width:"100%",textAlign:"center"}}>View More</button>
+                    {/* <button onClick={()=>(navigate("/wedding"))} style={{color:"white",textShadow:"0px 0px 10px black",width:"100%",textAlign:"center"}}>View More</button> */}
                     <h1>Weddings</h1>
                 </div>
             </div>
@@ -155,7 +155,7 @@ const EventHome = (props) => {
                     </span>    
                     </p>
                     <h1>Weddings</h1>
-                    <button onClick={()=>(navigate("/wedding"))} style={{color:"white",textShadow:"0px 0px 10px black"}}>View More</button>
+                    {/* <button onClick={()=>(navigate("/wedding"))} style={{color:"white",textShadow:"0px 0px 10px black"}}>View More</button> */}
                 </div>
             </div>
         </div>
