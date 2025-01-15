@@ -504,12 +504,15 @@
         width:20vw;
     }
 }
-@media (max-width:400px){
+@media (max-width:500px){
      span {
         display:none;
     } 
     .event-list {
         height:1250px;
+    }
+    .event-list .corporate-event p{
+        font-size:0.8rem;
     }
     /* .event-list >div{
         max-height:10px;
