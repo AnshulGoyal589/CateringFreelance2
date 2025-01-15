@@ -11,7 +11,7 @@ const Navbar = () => {
     { to: '/events', label: 'Events' },
     { to: '/contact-us', label: 'Contact Us' },
     { to: '/about-us', label: 'About Us' },
-    { to: '/blog', label: 'Blog' }
+    // { to: '/blog', label: 'Blog' }
   ];
 
   return (
@@ -20,11 +20,12 @@ const Navbar = () => {
         <div className="flex justify-between items-center h-20">
           {/* Logo and Brand */}
           <Link to="/" className="flex items-center space-x-4 group">
-            <div className="w-36 h-16 overflow-hidden">
+            <div className="w-20 h-16 overflow-hidden flex items-center justify-center">
               <img 
                 src={logo} 
                 alt="Savoury Soirée Logo"
-                className="w-full h-full object-contain transition-transform duration-300 group-hover:scale-105"
+                className="object-contain transition-transform duration-300 group-hover:scale-105"
+                style={{width:"100px"}}
               />
             </div>
             <div className="flex flex-col">
