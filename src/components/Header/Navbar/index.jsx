@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { X, Menu } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import logo from '../../../assets/Logo.png';
-
+import "./navbar.css"
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   
@@ -15,8 +15,8 @@ const Navbar = () => {
   ];
 
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 bg-[#ecece2] shadow-md">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <nav className="fixed top-0 left-0 right-0 z-50 bg-[#ecece2] shadow-md" style={{height:"98px"}}>
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-2">
         <div className="flex justify-between items-center h-20">
           {/* Logo and Brand */}
           <Link to="/" className="flex items-center space-x-4 group">
@@ -44,7 +44,7 @@ const Navbar = () => {
               <Link
                 key={link.to}
                 to={link.to}
-                className="text-black hover:text-[#f1a986] px-3 py-2 text-sm font-medium transition-colors duration-200 relative after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-[#f1a986] after:transition-all after:duration-300 hover:after:w-full"
+                className="text-black hover:text-[#f1a986] px-3 py-2 text-m font-medium transition-colors duration-200 relative after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-[#f1a986] after:transition-all after:duration-300 hover:after:w-full"
               >
                 {link.label}
               </Link>
