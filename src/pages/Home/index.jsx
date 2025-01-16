@@ -146,7 +146,7 @@ const Home = (props) => {
                   {slide.subheading}
                 </p>
 
-                <div className="animate-buttons flex flex-col sm:flex-row justify-center items-center gap-4 sm:gap-6">
+                <div className=" flex flex-col sm:flex-row justify-center items-center gap-4 sm:gap-6">
                   <button
                     onClick={() => navigate("/about-us")}
                     className="px-8 py-3 text-lg font-medium bg-[#f1a986] text-white border-2 border-[#f1a986] hover:bg-transparent hover:text-white transition-all duration-300 rounded-md w-full sm:w-auto"
@@ -222,7 +222,7 @@ const Home = (props) => {
       </div> */}
       
       <div className="bg-[#ecece2] py-16 px-4 sm:px-6 lg:px-8">
-        <News />
+        {/* <News /> */}
       </div>
     </div>
   );

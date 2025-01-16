@@ -33,16 +33,18 @@ const CardComponent = () => {
       heading: 'Gourmet Creations',
       subheading: "Artfully crafted menus showcasing the finest ingredients and inspired by the world's most exquisite cuisines."
     },
-    {
-      image: "https://res.cloudinary.com/daa3y840x/image/upload/v1734955239/85213c7a-1620-4d35-bbe5-8f41e43b681e_demf7u.jpg",
-      heading: 'Impeccable Service',
-      subheading: 'Our seasoned team of professionals is committed to delivering seamless hospitality, leaving you free to savor each moment.'
-    },
+    
     {
       image: "https://www.keydesign-themes.com/etalon/catering/wp-content/uploads/sites/19/2017/06/2.jpg",
       heading: 'Tailored Culinary Experiences',
       subheading: 'Bespoke menus designed to complement your tastes, themes, and dietary preferences.'
+    },
+    {
+      image: "https://www.keydesign-themes.com/etalon/catering/wp-content/uploads/sites/19/2017/06/3.jpg",
+      heading: 'Savory Sides',
+      subheading: 'Our carefully curated selection of sides is crafted to perfectly complement every meal, making each bite an experience to savor.'
     }
+
   ];
 
   return (
