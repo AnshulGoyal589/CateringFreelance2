@@ -150,6 +150,7 @@
     align-items:center;
     justify-content:center;
     flex-direction:column;
+    font-size:0.9rem;
 }
 .event-list .corporate-event button{
     border:0.5px solid #f09c6e;
@@ -174,7 +175,6 @@
     border-radius:50%;
     position:relative;
     top:5%;
-    left:5%;
     min-width:350px;
     height:350px;
     background-image:linear-gradient(to top,rgb(250, 177, 42),rgb(234, 140, 130),salmon,brown,rgb(93, 20, 20));
@@ -187,13 +187,14 @@
     opacity:0.9;
 }
 .social-event .circle h2{
-    font-size:1.5rem;
+    font-size:1.3rem;
     font-weight:600;
 }
 .social-event .circle p{
     text-align:center;
     padding-left:20%;
     padding-right:20%;
+    font-size: 0.9rem;
 }
 .social-event button{
     border:0.5px solid white;
@@ -503,12 +504,15 @@
         width:20vw;
     }
 }
-@media (max-width:400px){
+@media (max-width:500px){
      span {
         display:none;
     } 
     .event-list {
         height:1250px;
+    }
+    .event-list .corporate-event p{
+        font-size:0.8rem;
     }
     /* .event-list >div{
         max-height:10px;

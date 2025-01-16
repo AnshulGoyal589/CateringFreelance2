@@ -12,16 +12,16 @@ const Footer=()=>{
             <div class="external-links">
                 <h1>Quick Links:</h1>
                 <ul className="fast-links">
-                    <li>Home</li>
-                    <li>Events</li>
-                    <li>About Us</li>
-                    <li>Contact Us</li>
-                    <li>Blog</li>
-                    <li>External Site Link 1</li>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/events">Events</a></li>
+                    <li><a href="/contact-us">Contact Us</a></li>
+                    <li><a href="/about-us">About Us</a></li>
+                    <li><a href="/contact-us">Reserve Now</a></li>
                 </ul>
             </div>
             <div className="external-links">
                 <h1>Services:</h1>
+                <a href="/events">
                 <ul className="fast-links">
                     <li>Weddings</li>
                     <li>Social Events</li>
@@ -30,6 +30,7 @@ const Footer=()=>{
                     <li>Engagements</li>
                     <li>Birthdays</li>
                 </ul>
+                </a>
             </div>
             <div class="contact-us">
                 <h1>Contact Us:</h1>
