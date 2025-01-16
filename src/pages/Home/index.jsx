@@ -99,7 +99,6 @@ const Home = (props) => {
   return (
     <div className="min-h-screen w-full bg-[#ecece2]">
       <style>{slideAnimations}</style>
-      
       <Swiper
         className="w-full h-screen relative"
         loop={true}
@@ -144,27 +143,26 @@ const Home = (props) => {
                 <p className="animate-heading text-xl sm:text-2xl mb-8 text-gray-100">
                   {slide.subheading}
                 </p>
-
-                <div className=" flex flex-col sm:flex-row justify-center items-center gap-4 sm:gap-6">
-                  <button
-                    onClick={() => navigate("/about-us")}
-                    className="px-8 py-3 text-lg font-medium bg-[#f1a986] text-white border-2 border-[#f1a986] hover:bg-transparent hover:text-white transition-all duration-300 rounded-md w-full sm:w-auto"
-                  >
-                    Discover More
-                  </button>
-                  <button
-                    onClick={() => navigate("/contact-us")}
-                    className="px-8 py-3 text-lg font-medium bg-white text-[#f1a986] border-2 border-white hover:bg-transparent hover:text-white transition-all duration-300 rounded-md w-full sm:w-auto"
-                  >
-                    Plan Your Event
-                  </button>
-                </div>
               </div>
             </div>
           </SwiperSlide>
         ))}
       </Swiper>
-
+      <div className=" flex flex-col sm:flex-row justify-center items-center gap-4 sm:gap-6"
+      style={{position:"absolute",top:"67%",zIndex:"5",width:"100%"}}>
+                  <button
+                    onClick={() => navigate("/about-us")}
+                    className="px-8 py-3 text-lg font-medium bg-[#f1a986] text-white border-2 border-[#f1a986] hover:bg-transparent hover:text-white transition-all duration-300 rounded-md w-52 sm:w-auto"
+                  >
+                    Discover More
+                  </button>
+                  <button
+                    onClick={() => navigate("/contact-us")}
+                    className="px-8 py-3 text-lg font-medium bg-white text-[#f1a986] border-2 border-white hover:bg-transparent hover:text-white transition-all duration-300 rounded-md w-52 sm:w-auto"
+                  >
+                    Plan Your Event
+                  </button>
+        </div>
       {/* Navigation Arrows */}
       <div className="swiper-button-next !text-white hover:text-[#f1a986] transition-colors duration-300"></div>
       <div className="swiper-button-prev !text-white hover:text-[#f1a986] transition-colors duration-300"></div>
