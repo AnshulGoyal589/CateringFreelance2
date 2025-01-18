@@ -193,9 +193,13 @@ const Footer = () => {
               <span className="text-gray-200">3+</span> Years of Experience.
             </p>
           </div>
-          
-          <div className="text-center text-gray-500 text-xs sm:text-sm pt-4 sm:pt-6 border-t border-gray-700">
-            © 2025 Savoury Soirée. All rights reserved.
+          <div className='flex justify-between border-t border-gray-700' >
+            <div className="text-center text-gray-500 text-xs sm:text-sm pt-4 sm:pt-6 ">
+              © 2025 Savoury Soirée. All rights reserved.
+            </div>
+            <div className="text-center text-gray-500 text-xs sm:text-sm pt-4 sm:pt-6 border-t border-gray-700">
+              Designed & Developed By <a className="font-semibold text-gray-400 hover:text-gray-300 underline underline-offset-2" href="https://portfolio-ymyk.onrender.com/" target="_blank" rel="noopener noreferrer">Anshul Goyal</a>
+            </div>
           </div>
         </div>
       </div>
