@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://savourysoirée.com/sitemap.xml
