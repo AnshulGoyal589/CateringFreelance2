@@ -20,7 +20,7 @@ const Navbar = () => {
         <div className="flex justify-between items-center h-20">
           {/* Logo and Brand */}
           <Link to="/" className="flex items-center space-x-4 group">
-            <div className="w-20 h-16 overflow-hidden flex items-center justify-center">
+            <div className="w-24 h-16 overflow-hidden flex items-center justify-center">
               <img 
                 src={logo} 
                 alt="Savoury Soirée Logo"
@@ -29,12 +29,12 @@ const Navbar = () => {
               />
             </div>
             <div className="flex flex-col">
-              <span className="text-xl font-serif font-bold text-gray-900 group-hover:text-[#f1a986] transition-colors duration-200">
+              <p className="text-xl font-serif font-bold text-gray-900 group-hover:text-[#f1a986] transition-colors duration-200">
                 Savoury Soirée
-              </span>
-              <span className="text-sm font-serif text-black">
+              </p>
+              <p className="text-sm font-serif text-black">
                 Catering & Events
-              </span>
+              </p>
             </div>
           </Link> 
 
