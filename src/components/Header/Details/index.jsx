@@ -10,22 +10,22 @@ const Details=()=>{
         <div className="details">
             <div className="contact-details">
                 <div>
-                    <img src={LocationIcon}/>
+                    <img src={LocationIcon} alt="location-icon" />
                     <text>211, Second Floor, Ashirwad Complex, Block D, Green Park, New Delhi 110016</text>
                 </div>
                 <div>
-                    <img src={PhoneIcon}/>
+                    <img src={PhoneIcon} alt="phone-icon" />
                     <text>+91 9879988322</text>
                 </div>
                 <div>
-                    <img src={MailIcon}/>
+                    <img src={MailIcon} alt="mail-icon" />
                     <text>caterers@savourysoiree.com</text>
                 </div>
             </div>
             <div className="links">
-            <img src={FacebookIcon}/>
-            <img src={XIcon}/>
-            <img src={InstagramIcon}/>
+            <img src={FacebookIcon}  alt="facebook-icon"  />
+            <img src={XIcon} alt="x-icon" />
+            <img src={InstagramIcon} alt="instagram-icon" />
             </div>
         </div>
     )

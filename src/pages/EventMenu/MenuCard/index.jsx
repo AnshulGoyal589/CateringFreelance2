@@ -2,7 +2,7 @@ const MenuCard=(props)=>{
     return (
     <div className="menu-card">
         <div className="img-container">
-            <img src="./Services.png"/>
+            <img src="./Services.png" alt="service-icon" />
         </div>
         <div className="text-content">
             <h2>{props.name}</h2>
