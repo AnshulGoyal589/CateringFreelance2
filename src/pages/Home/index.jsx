@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import { Helmet } from "react-helmet";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination, Autoplay } from "swiper/modules";
 import { useInView } from "react-intersection-observer";
@@ -9,14 +10,9 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "aos/dist/aos.css";
 
-// Import your components
-import PriceOptions from "./PriceOptions";
 import CardComponent from "./CardComponent";
-import CateringService from "./CateringService";
 import Service from "./Service";
-import Testimonial from "./Testimonial";
 import CateringEvents from "./CateringEvents";
-import News from "./News";
 import FilmList from "./AboutUs";
 import InternationalCatering from "./InternationalCatering";
 
@@ -65,20 +61,54 @@ const Home = (props) => {
 
   const slidesData = [
     {
-      image:"https://img.freepik.com/premium-psd/abundant-buffet-table-with-various-dishes-including-pasta-seafood-salad-roasted-vegetables-bread_296091-32866.jpg?ga=GA1.1.1812414693.1722386078&semt=ais_hybrid",
-      heading: "Elevating Your Events With Custom Catering Experiences",
-      subheading: "Crafting Unforgettable Moments Through Culinary Excellence",
-    },
-    {image:"https://img.freepik.com/premium-photo/contemporary-hotel-dining-area-featuring-sleek-buffet-setup-stylish-seating-arrangement_355018-11820.jpg?w=1060",
-      heading: "Savor The Finest Catering Options, Designed Just For You",
-      subheading: "Bespoke Dining Experiences For Distinguished Events",
+      image: "https://img.freepik.com/premium-psd/abundant-buffet-table-with-various-dishes-including-pasta-seafood-salad-roasted-vegetables-bread_296091-32866.jpg?ga=GA1.1.1812414693.1722386078&semt=ais_hybrid",
+      heading: "Premier Catering Services in Delhi NCR",
+      subheading: "Luxury Catering Solutions for Corporate Events & Weddings",
+      alt: "Luxury catering spread in Delhi featuring international cuisine"
     },
     {
-      image:"https://img.freepik.com/premium-photo/festive-iftar-gathering-soft-lantern-lights-with-delicious-appetizers-drinks_1160244-4718.jpg?w=1060",
-      heading: "Premium Catering Services For Your Taste Only",
-      subheading: "Where Luxury Meets Culinary Artistry",
+      image: "https://img.freepik.com/premium-photo/contemporary-hotel-dining-area-featuring-sleek-buffet-setup-stylish-seating-arrangement_355018-11820.jpg?w=1060",
+      heading: "Best Wedding Caterers in Delhi",
+      subheading: "Crafting Memorable Celebrations with Exquisite Cuisines",
+      alt: "Elegant wedding catering setup in Delhi"
+    },
+    {
+      image: "https://img.freepik.com/premium-photo/festive-iftar-gathering-soft-lantern-lights-with-delicious-appetizers-drinks_1160244-4718.jpg?w=1060",
+      heading: "Top Corporate Event Catering in Delhi",
+      subheading: "Professional Catering Services for Business Functions",
+      alt: "Corporate event catering arrangement in Delhi"
     },
   ];
+
+  const structuredData = {
+    "@context": "https://schema.org",
+    "@type": "CateringService",
+    "name": "Premium Delhi Catering Services",
+    "description": "Leading catering service provider in Delhi NCR, specializing in weddings, corporate events, and luxury celebrations with international cuisine options.",
+    "areaServed": {
+      "@type": "City",
+      "name": "Delhi NCR"
+    },
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Delhi",
+      "addressRegion": "Delhi",
+      "addressCountry": "IN"
+    },
+    "priceRange": "₹₹₹",
+    "servesCuisine": [
+      "Indian",
+      "Continental",
+      "Oriental",
+      "Mediterranean"
+    ],
+    "amenityFeature": [
+      "Corporate Catering",
+      "Wedding Catering",
+      "International Cuisine",
+      "Theme Parties"
+    ]
+  };
 
   const { ref, inView } = useInView({
     triggerOnce: true,
@@ -98,131 +128,116 @@ const Home = (props) => {
   };
 
   return (
-    <div className="min-h-screen w-full bg-[#ecece2]">
-      <style>{slideAnimations}</style>
-      <Swiper
-        className="w-full h-screen relative"
-        loop={true}
-        navigation={{
-          nextEl: ".swiper-button-next",
-          prevEl: ".swiper-button-prev",
-        }}
-        pagination={{
-          clickable: true,
-          bulletActiveClass: 'swiper-pagination-bullet-active bg-[#f1a986]'
-        }}
-        autoplay={{
-          delay: 5000,
-          disableOnInteraction: false,
-        }}
-        modules={[Navigation, Pagination, Autoplay]}
-        onSlideChange={handleSlideChange}
-        speed={1500}
-      >
-        {slidesData.map((slide, index) => (
-          <SwiperSlide key={index}>
-            <div
-              className="h-screen w-full flex flex-col items-center justify-center text-white text-center relative overflow-hidden"
-              style={{
-                backgroundImage: `url(${slide.image})`,
-                backgroundSize: "cover",
-                backgroundPosition: "center",
-              }}
-            >
-              {/* Gradient Overlay */}
-              <div className="absolute inset-0 bg-gradient-to-b from-black/30 via-black/20 to-black/40"></div>
+    <>
+      <Helmet>
+        <title>Premium Catering Services in Delhi NCR | Wedding & Corporate Events</title>
+        <meta name="description" content="Leading catering service provider in Delhi NCR. Specialized in luxury weddings, corporate events, and international cuisine. Professional catering solutions with customized menus." />
+        <meta name="keywords" content="delhi catering services, wedding caterers delhi, corporate catering delhi ncr, best caterers in delhi, luxury catering delhi" />
+        <meta name="robots" content="index, follow" />
+        <meta name="geo.region" content="IN-DL" />
+        <meta name="geo.placename" content="Delhi" />
+        <link rel="canonical" href="https://yourwebsite.com/" />
+        <script type="application/ld+json">
+          {JSON.stringify(structuredData)}
+        </script>
+      </Helmet>
 
-              {/* Content Section */}
+      <div className="min-h-screen w-full bg-[#ecece2]">
+        <style>{slideAnimations}</style>
+        <Swiper
+          className="w-full h-screen relative"
+          loop={true}
+          navigation={{
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+          }}
+          pagination={{
+            clickable: true,
+            bulletActiveClass: 'swiper-pagination-bullet-active bg-[#f1a986]'
+          }}
+          autoplay={{
+            delay: 5000,
+            disableOnInteraction: false,
+          }}
+          modules={[Navigation, Pagination, Autoplay]}
+          onSlideChange={handleSlideChange}
+          speed={1500}
+        >
+          {slidesData.map((slide, index) => (
+            <SwiperSlide key={index}>
               <div
-                ref={ref}
-                className="relative z-10 px-4 sm:px-6 lg:px-8 max-w-4xl mx-auto"
-                key={animationKey}
+                className="h-screen w-full flex flex-col items-center justify-center text-white text-center relative overflow-hidden"
+                style={{
+                  backgroundImage: `url(${slide.image})`,
+                  backgroundSize: "cover",
+                  backgroundPosition: "center",
+                }}
+                role="banner"
               >
-                <h2 className="animate-heading text-3xl sm:text-5xl lg:text-6xl font-serif font-bold mb-6 leading-tight">
-                  {slide.heading}
-                </h2>
-                <p className="animate-heading text-xl sm:text-2xl mb-8 text-gray-100">
-                  {slide.subheading}
-                </p>
+                <div className="absolute inset-0 bg-gradient-to-b from-black/30 via-black/20 to-black/40"></div>
+                <div
+                  ref={ref}
+                  className="relative z-10 px-4 sm:px-6 lg:px-8 max-w-4xl mx-auto"
+                  key={animationKey}
+                >
+                  <h1 className="animate-heading text-3xl sm:text-5xl lg:text-6xl font-serif font-bold mb-6 leading-tight">
+                    {slide.heading}
+                  </h1>
+                  <p className="animate-heading text-xl sm:text-2xl mb-8 text-gray-100">
+                    {slide.subheading}
+                  </p>
+                </div>
               </div>
-            </div>
-          </SwiperSlide>
-        ))}
-      </Swiper>
-      <div className=" flex flex-col sm:flex-row justify-center items-center gap-4 sm:gap-6"
-      style={{position:"absolute",top:"69%",zIndex:"5",width:"100%"}}>
-                  <button
-                    onClick={() => navigate("/about-us")}
-                    className="px-8 py-3 text-lg font-medium bg-[#f1a986] text-white border-2 border-[#f1a986] hover:bg-transparent hover:text-white transition-all duration-300 rounded-md w-52 sm:w-auto"
-                  >
-                    Discover More
-                  </button>
-                  <button
-                    onClick={() => navigate("/contact-us")}
-                    className="px-8 py-3 text-lg font-medium bg-white text-[#f1a986] border-2 border-white hover:bg-transparent hover:text-white transition-all duration-300 rounded-md w-52 sm:w-auto"
-                  >
-                    Plan Your Event
-                  </button>
-        </div>
-      {/* Navigation Arrows */}
-      <div className="swiper-button-next !text-white hover:text-[#f1a986] transition-colors duration-300"></div>
-      <div className="swiper-button-prev !text-white hover:text-[#f1a986] transition-colors duration-300"></div>
+            </SwiperSlide>
+          ))}
+        </Swiper>
 
-      {/* Content Sections */}
-      <div className="relative z-20 px-4 sm:px-6 lg:px-8 -mt-28 bg-transparent">
-        <CardComponent />
-      </div>
-
-      {/* <div className="min-h-[700px] bg-white">
-        <CateringService />
-      </div> */}
-
-      <div className="bg-[#ecece2]">
-        <FilmList />
-      </div>
-
-      <div className="bg-[#ecece2]">
-        <Service />
-      </div>
-
-      {/* <div className="bg-[#f5f4f0]">
-        <PriceOptions />
-      </div> */}
-
-      {/* <div className="bg-gray-100 py-16">
-        <Testimonial />
-      </div> */}
-
-      <div className="bg-[#ecece2]">
-        <CateringEvents />
-      </div>
-
-      <InternationalCatering/>
-
-      {/* <div className="menu-container">
         <div 
-          style={{
-              marginBottom:"-5%", overflow:"hidden",
-              display:"flex", alignItems:"center",justifyContent:"center",height:"250px",width:"100%",backgroundImage:"url('MenuTextBorder.png')", backgroundSize:"100%"}}>
-            <p className="gold-lustrous-text">
-            <p style={{fontFamily:"roboto"}}>{
-              `Our global reach and unwavering dedication to excellence ensure a seamless and memorable\n dining experience for every occasion, no matter the location.
-  The Savoury Soiree is proud to cater for prestigious international events, including:`
-            }</p>
-          <pre style={{fontFamily:"roboto",display:"flex",justifyContent:"center",paddingLeft:"0"}} >
-            {("-JSW PAINTS corporate catering at Hyatt Regency,\n Sydney, Australia| - ASIAN PAINTS coporate catering in Bali, Indonesia| -JSW PAINTS corporate catering in Budapest, Hungary.".split("|")).map((e)=>{
-              return (
-                  <>{e}<br/></>
-              )
-          })}</pre>
-            </p>
+          className="flex flex-col sm:flex-row justify-center items-center gap-4 sm:gap-6"
+          style={{position:"absolute", top:"69%", zIndex:"5", width:"100%"}}
+        >
+          <button
+            onClick={() => navigate("/about-us")}
+            className="px-8 py-3 text-lg font-medium bg-[#f1a986] text-white border-2 border-[#f1a986] hover:bg-transparent hover:text-white transition-all duration-300 rounded-md w-52 sm:w-auto"
+            aria-label="Learn more about our catering services"
+          >
+            Discover More
+          </button>
+          <button
+            onClick={() => navigate("/contact-us")}
+            className="px-8 py-3 text-lg font-medium bg-white text-[#f1a986] border-2 border-white hover:bg-transparent hover:text-white transition-all duration-300 rounded-md w-52 sm:w-auto"
+            aria-label="Contact us to plan your event"
+          >
+            Plan Your Event
+          </button>
         </div>
-      </div> */}
-      
-      <div className="bg-[#ecece2] py-16 px-4 sm:px-6 lg:px-8">
-        {/* <News /> */}
+
+        <div className="swiper-button-next !text-white hover:text-[#f1a986] transition-colors duration-300"></div>
+        <div className="swiper-button-prev !text-white hover:text-[#f1a986] transition-colors duration-300"></div>
+
+        <main>
+          <section className="relative z-20 px-4 sm:px-6 lg:px-8 bg-transparent">
+            <CardComponent />
+          </section>
+
+          <section className="bg-[#ecece2]">
+            <FilmList />
+          </section>
+
+          <section className="bg-[#ecece2]">
+            <Service />
+          </section>
+
+          <section className="bg-[#ecece2]">
+            <CateringEvents />
+          </section>
+
+          <section>
+            <InternationalCatering/>
+          </section>
+        </main>
       </div>
-    </div>
+    </>
   );
 };
 
